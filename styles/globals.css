@@ -12,6 +12,9 @@ a {
   text-decoration: none;
 }
 
+.simple-linear {
+  background: linear-gradient(#EDFBFA, white);
+}
 * {
   box-sizing: border-box;
 }

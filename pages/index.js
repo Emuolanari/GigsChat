@@ -18,7 +18,7 @@ export default function Home() {
               <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings,
                 secure payments,
                 conversations and dispute management</p>
-              <div style={{display:'flex'}} id='inputCol'><input style={{minHeight:40}} type="text"
+              <div style={{display:'flex'}} id='inputCol'><input style={{minHeight:40, border: '1px solid gray'}} type="text"
                   placeholder='Enter email address' />
                 <WaitingListBtn passedColor={'#0bc5b9'} />
               </div>
@@ -78,8 +78,11 @@ export default function Home() {
 
       <div className="container mt-5">
         <div className="row">
-          <div className="col">
-          <Image src={HeadphoneGirl} alt="girl" objectFit='contain' />
+          <div className="col position-relative">
+              <div style={{minWidth: '100%', minHeight: '100%'}}>
+                <Image src={HeadphoneGirl} alt="girl" objectFit='contain' layout='fill'/>
+              </div>
+          
           </div>
 
           <div className="col">
