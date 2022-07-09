@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faLock, faPeopleGroup} from "@fortawesome/free-solid-svg-icons"
 
 export default function MiniCard({title, body, icon}) {
   return (

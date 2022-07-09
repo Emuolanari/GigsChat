@@ -23,16 +23,16 @@ export default function Footer() {
           </div>
           <div>
             <a href="#" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} size={'2x'}/>
             </a>
             <a href="#" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faTwitter} size={'2x'}/>
             </a>
             <a href="#" className="me-4 text-reset">
-            <FontAwesomeIcon className="fa-lg me-3 fa-fw" icon={faFacebook} />
+            <FontAwesomeIcon icon={faFacebook} size={'2x'}/>
             </a>
             <a href="#" className="me-4 text-reset">
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} size={'2x'}/>
             </a>
           </div>
         </section>
