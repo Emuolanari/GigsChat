@@ -9,7 +9,7 @@ export default function Footer() {
         <section className='mt-5' style={{backgroundColor:'#0BC5B9', minHeight:400}}>
             <h1 className='pt-5 mb-5' style={{fontFamily: 'Raleway'}}>You can join the waitlist</h1>
             <div className='justify-content-center pb-5' style={{display:'flex'}}>
-                <input className='border-0' style={{minHeight:40, minwidth:470}} type="text" placeholder='Enter email address' />
+                <input className='border-0' type="text" placeholder='Enter email address' />
                 <WaitingListBtn passedColor={'#000'} />
             </div>
         </section>

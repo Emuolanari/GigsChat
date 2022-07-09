@@ -82,9 +82,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
               <div className="col">
-                  <div style={{minWidth: '100%', minHeight: '90%', position:'relative'}}>
-                    <Image src={HeadphoneGirl} alt="girl" layout='fill' objectFit='cover'/>
-                  </div>
+                <Image src={HeadphoneGirl} alt="girl" objectFit='cover'/>
               </div>
               <div className="col">
                 <h1 className='headings mt-4' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>

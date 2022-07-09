@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { Container, Navbar, Nav } from "react-bootstrap";
 import WaitingListBtn from './WaitingListBtn';
-import Brand from './../assets/brand.jpeg'
-import Image from 'next/image'
 
 
 export default function NavBar(){
