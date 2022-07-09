@@ -6,6 +6,7 @@ import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import whiteWoman from './../src/assets/whiteWoman.jpg'
 import MiniCard from '../src/components/MiniCard'
+import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH} from "@fortawesome/free-solid-svg-icons"
 
 export default function Home() {
   return (
@@ -89,16 +90,16 @@ export default function Home() {
           <div className="col">
             <h1 style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
             <div className="d-flex">
-              <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'}/>
-              <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'}/>
+              <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar}/>
+              <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar}/>
             </div>
             <div className="d-flex">
-              <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'}/>
-              <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'}/>
+              <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell}/>
+              <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock}/>
             </div>
             <div className="d-flex">
-              <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'}/>
-              <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'}/>
+              <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup}/>
+              <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH}/>
             </div>
           </div>
         </div>
