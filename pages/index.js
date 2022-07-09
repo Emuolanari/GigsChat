@@ -46,9 +46,15 @@ export default function Home() {
       <div className='container mt-5'>
         <div className="row justify-content-center">
           <h1 className='text-center'>Choose from multiple influencer categories</h1>
-          <Card name={'Tunde Ajayi'} story ={'Using GigsChat allowed me to speak to only financially commited clients and manage their expectations easily'} imgSrc={HeadphoneGirl}/>
-          <Card name={'Aisha Ahmed'} story ={'GigsChat allowed me find influencers that fit my marketing budget and have the audience reach I require'} imgSrc={NigerGirl}/>
-          <Card name={'Amara Elechi'} story ={'I never have to worry about getting my payments, as they are done securely through GigsChat'} imgSrc={HeadphoneGirl}/>
+          <Card name={'Tunde Ajayi'} 
+          story ={'Using GigsChat allowed me to speak to only financially commited clients and manage their expectations easily'} 
+          imgSrc={HeadphoneGirl} about={'Up and coming photographer'}/>
+          <Card name={'Aisha Ahmed'} 
+          story ={'GigsChat allowed me find influencers that fit my marketing budget and have the audience reach I require'} 
+          imgSrc={NigerGirl} about={'Marketing manager, Big Brand Inc.'}/>
+          <Card name={'Amara Elechi'} 
+          story ={'I never have to worry about getting my payments, as they are done securely through GigsChat'} 
+          imgSrc={HeadphoneGirl} about={'Dancer and tiktok influencer'} />
         </div>
       </div>
 
