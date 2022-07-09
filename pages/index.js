@@ -29,7 +29,7 @@ export default function Home() {
           <div className='col'>
             <Image src={GroupGirl} alt="girl" objectFit='contain' />
           </div>
-          <div style={{display:'flex'}} id='inputRow'><input style={{minHeight:40}} type="text"
+          <div style={{display:'flex'}} id='inputRow'><input  style={{ border: '1px solid gray'}} type="text"
               placeholder='Enter email address' />
             <WaitingListBtn passedColor={'#0bc5b9'} />
           </div>
