@@ -81,9 +81,9 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className="container">
             <div className="row">
-              <div className="col position-relative">
-                  <div style={{minWidth: '100%', minHeight: '100%'}}>
-                    <Image src={HeadphoneGirl} alt="girl" objectFit='contain' layout='fill'/>
+              <div className="col">
+                  <div style={{minWidth: '100%', minHeight: '100%', position:'relative'}}>
+                    <Image src={HeadphoneGirl} alt="girl" layout='fill' objectFit='cover'/>
                   </div>
               </div>
               <div className="col">
