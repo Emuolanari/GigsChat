@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import WaitingListBtn from './WaitingListBtn';
+import LOGO from './../assets/logo.jpeg';
 
 export default function Footer() {
   return (

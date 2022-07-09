@@ -4,6 +4,7 @@ import WaitingListBtn from '../src/components/WaitingListBtn'
 import GroupGirl from './../src/assets/GroupGirl.png'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
+import whiteWoman from './../src/assets/whiteWoman.jpg'
 import MiniCard from '../src/components/MiniCard'
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
               <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings,
                 secure payments,
                 conversations and dispute management</p>
-              <div style={{display:'flex'}} id='inputCol'><input style={{minHeight:40, border: '1px solid gray'}} type="text"
+              <div style={{display:'flex'}} id='inputCol'><input style={{ border: '1px solid gray'}} type="text"
                   placeholder='Enter email address' />
                 <WaitingListBtn passedColor={'#0bc5b9'} />
               </div>
@@ -66,7 +67,7 @@ export default function Home() {
           imgSrc={NigerGirl} about={'Marketing manager, Big Brand Inc.'}/>
           <Card name={'Amara Elechi'} 
           story ={'I never have to worry about getting my payments, as they are done securely through GigsChat'} 
-          imgSrc={HeadphoneGirl} about={'Dancer and tiktok influencer'} />
+          imgSrc={whiteWoman} about={'Dancer and tiktok influencer'} />
         </div>
       </div>
 

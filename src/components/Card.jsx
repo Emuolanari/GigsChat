@@ -5,7 +5,7 @@ import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg
 export default function Card({name, story, imgSrc, about}) {
   return (
     <div className='col'>
-      <div className="card shadow p-3 mb-3" style={{ minWidth: '18rem' }}>
+      <div className="card shadow p-4 mb-3" style={{ minWidth: '16rem' }}>
         <div className="card-body text-center justify-content-center">
           <div className='mx-auto' style={{width:'7rem', height:'7rem'}}>
           <Image src={imgSrc} alt="thumbnail" className='rounded-circle z-depth-2 img-thumbnail' objectFit='contain'/>
