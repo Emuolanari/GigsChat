@@ -13,7 +13,7 @@ export default function Home() {
     <div className=' mt-5'>
       <div className='container'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-md'>
             <div className='d-flex flex-column justify-content-start h-100'>
               <h1 className='headings' style={{fontFamily: 'Raleway'}}>Find, connect with, and hire your favourite influencers and creators
               </h1>
@@ -27,8 +27,8 @@ export default function Home() {
             </div>
 
           </div>
-          <div className='col'>
-            <Image src={GroupGirl} alt="girl" objectFit='contain' />
+          <div className='col-md'>
+            <Image className='img-responsive' src={GroupGirl} alt="girl" objectFit='contain' />
           </div>
           <div style={{display:'flex'}} id='inputRow'><input  style={{ border: '1px solid gray'}} type="text"
               placeholder='Enter email address' />
@@ -81,22 +81,22 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className="container">
             <div className="row">
-              <div className="col">
-                  <div style={{minWidth: '100%', minHeight: '90%', position:'relative'}}>
-                    <Image src={HeadphoneGirl} alt="girl" layout='fill' objectFit='cover'/>
-                  </div>
+              <div className="col-lg">
+                <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
+                    <Image src={HeadphoneGirl} alt="girl"  className='img-responsive' objectFit='cover'/>
+                </div>
               </div>
-              <div className="col">
-                <h1 className='headings mt-4' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
-                <div className="d-flex">
+              <div className="col-lg">
+                <h1 className='headings mt-4 mb-4 text-center' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
+                <div className="d-flex justify-content-center">
                   <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar}/>
                   <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar}/>
                 </div>
-                <div className="d-flex">
+                <div className="d-flex justify-content-center">
                   <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell}/>
                   <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock}/>
                 </div>
-                <div className="d-flex">
+                <div className="d-flex justify-content-center">
                   <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup}/>
                   <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH}/>
                 </div>
