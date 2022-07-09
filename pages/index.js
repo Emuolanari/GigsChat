@@ -4,6 +4,7 @@ import WaitingListBtn from '../src/components/WaitingListBtn'
 import GroupGirl from './../src/assets/GroupGirl.png'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
+import MiniCard from '../src/components/MiniCard'
 
 export default function Home() {
   return (
@@ -12,10 +13,12 @@ export default function Home() {
         <div className='row'>
           <div className='col'>
             <div className='d-flex flex-column justify-content-start h-100'>
-              <h1 style={{fontFamily: 'Raleway'}}>Find, connect with, and hire your favourite influencers and creators</h1>
-              <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings, secure payments,
+              <h1 style={{fontFamily: 'Raleway'}}>Find, connect with, and hire your favourite influencers and creators
+              </h1>
+              <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings,
+                secure payments,
                 conversations and dispute management</p>
-              <div style={{display:'flex'}}><input style={{minHeight:40}} type="text"
+              <div style={{display:'flex'}} id='inputCol'><input style={{minHeight:40}} type="text"
                   placeholder='Enter email address' />
                 <WaitingListBtn passedColor={'#0bc5b9'} />
               </div>
@@ -24,6 +27,10 @@ export default function Home() {
           </div>
           <div className='col'>
             <Image src={GroupGirl} alt="girl" objectFit='contain' />
+          </div>
+          <div style={{display:'flex'}} id='inputRow'><input style={{minHeight:40}} type="text"
+              placeholder='Enter email address' />
+            <WaitingListBtn passedColor={'#0bc5b9'} />
           </div>
         </div>
 
@@ -77,6 +84,18 @@ export default function Home() {
 
           <div className="col">
             <h1 style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
+            <div className="d-flex">
+              <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'}/>
+              <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'}/>
+            </div>
+            <div className="d-flex">
+              <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'}/>
+              <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'}/>
+            </div>
+            <div className="d-flex">
+              <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'}/>
+              <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'}/>
+            </div>
           </div>
         </div>
       </div>
