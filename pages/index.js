@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
               <div className="col">
-                  <div style={{minWidth: '100%', minHeight: '100%', position:'relative'}}>
+                  <div style={{minWidth: '100%', minHeight: '90%', position:'relative'}}>
                     <Image src={HeadphoneGirl} alt="girl" layout='fill' objectFit='cover'/>
                   </div>
               </div>
