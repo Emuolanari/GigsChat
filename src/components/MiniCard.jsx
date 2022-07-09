@@ -8,7 +8,7 @@ export default function MiniCard({title, body, icon}) {
                     <i className="fa fa-plus-square" style="font-size:48px;color:red"></i>
                 </div>
             </div> */}
-            <FontAwesomeIcon icon={icon} style={{position:'absolute', top:0, bottom:0, zIndex:200}}/>
+            <FontAwesomeIcon icon={icon} style={{position:'absolute', top:-9, bottom:0, zIndex:200}}/>
         <div className="card-body text-center">
             <div className='bg-info.bg-gradient'>
                 <p className='card-title'>{title}</p>
