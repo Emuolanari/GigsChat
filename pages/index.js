@@ -69,6 +69,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col">
+            <h1>An Ecosystem of the business of Social Media</h1>
+          </div>
+          <div className="col">
+
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
