@@ -6,7 +6,6 @@ import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import whiteWoman from './../src/assets/whiteWoman.jpg'
 import MiniCard from '../src/components/MiniCard'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faCirclePlay} from "@fortawesome/free-solid-svg-icons"
 
 export default function Home() {
@@ -73,36 +72,36 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid mt-5">
+      <div className="container mt-5">
         <div className="row">
         <h1 className='headings text-center' style={{fontFamily: 'Raleway'}}>Built for convenience and allows you focus on what really matters</h1>
         </div>
       </div>
 
       <div className="container-fluid simple-linear mt-5">
-        <div className="row">
-          <div className="col position-relative">
-              <div style={{minWidth: '100%', minHeight: '100%'}}>
-                <Image src={HeadphoneGirl} alt="girl" objectFit='contain' layout='fill'/>
+        <div className="container">
+            <div className="row">
+              <div className="col position-relative">
+                  <div style={{minWidth: '100%', minHeight: '100%'}}>
+                    <Image src={HeadphoneGirl} alt="girl" objectFit='contain' layout='fill'/>
+                  </div>
               </div>
-          
-          </div>
-
-          <div className="col">
-            <h1 className='headings mt-4' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
-            <div className="d-flex">
-              <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar}/>
-              <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar}/>
+              <div className="col">
+                <h1 className='headings mt-4' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
+                <div className="d-flex">
+                  <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar}/>
+                  <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar}/>
+                </div>
+                <div className="d-flex">
+                  <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell}/>
+                  <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock}/>
+                </div>
+                <div className="d-flex">
+                  <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup}/>
+                  <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH}/>
+                </div>
+              </div>
             </div>
-            <div className="d-flex">
-              <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell}/>
-              <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock}/>
-            </div>
-            <div className="d-flex">
-              <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup}/>
-              <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH}/>
-            </div>
-          </div>
         </div>
       </div>
 
