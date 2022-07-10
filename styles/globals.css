@@ -55,3 +55,11 @@ input[type="text"] {
     flex-direction: column;
   }
 }
+
+@media only screen and (min-width: 1000px) {
+
+  input[type="text"] {                
+    /* Firefox, Chrome, Opera */ 
+    min-width: 300px;
+  } 
+}
