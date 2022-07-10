@@ -89,16 +89,16 @@ export default function Home() {
               <div className="col-lg">
                 <h1 className='headings mt-4 mb-4 text-center' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
                 <div className="d-flex justify-content-center">
-                  <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar}/>
-                  <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar}/>
+                  <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar} iconColor={'#0BC5B9'}/>
+                  <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar} iconColor={'#FFAC0E'}/>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell}/>
-                  <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock}/>
+                  <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell} iconColor={'#FD52AB'}/>
+                  <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock} iconColor={'#8C3AAA'}/>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup}/>
-                  <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH}/>
+                  <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup} iconColor={'#3748C4'}/>
+                  <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH} iconColor={'#38C069'}/>
                 </div>
               </div>
             </div>
