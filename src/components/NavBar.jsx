@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 
 export default function NavBar(){
+    {/* */}
     return(
         <Navbar bg="white" expand="lg">
             <Container>
