@@ -34,10 +34,12 @@ export default function Home() {
 
       </div>
 
-      <div className='container mt-5'>
-        <div className='row justify-content-center text-center'>
-          <h1 className='headings pb-4' style={{fontFamily: 'Raleway'}}>Watch demo video</h1>
-          <Image src={NigerGirl} width = {600} height= {400} alt='girl2' layout='intrinsic'/>
+      <div className="container-fluid simple-linear mt-5">
+        <div className='container'>
+          <div className='row justify-content-center text-center'>
+            <h1 className='headings pb-4' style={{fontFamily: 'Raleway'}}>Watch demo video</h1>
+            <Image src={NigerGirl} width = {600} height= {400} alt='girl2' layout='intrinsic'/>
+          </div>
         </div>
       </div>
 
