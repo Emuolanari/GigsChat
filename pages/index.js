@@ -36,7 +36,7 @@ export default function Home() {
 
       <div className="container-fluid simple-linear mt-5">
         <div className='container'>
-          <div className='row justify-content-center text-center'>
+          <div id='demo' className='row justify-content-center text-center'>
             <h1 className='headings pb-4 pt-4' style={{fontFamily: 'Raleway'}}>Watch demo video</h1>
             <Image src={NigerGirl} width = {600} height= {400} alt='girl2' layout='intrinsic'/>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div className="col-lg">
+              <div id='benefits' className="col-lg">
                 <h1 className='headings mt-4 mb-4 text-center' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
                 <div className="miniCards">
                   <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar} iconColor={'#0BC5B9'}/>
