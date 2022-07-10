@@ -79,10 +79,14 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className="container">
             <div className="row">
-              <div className="col-lg">
+              <div className="col-lg position-relative d-flex justify-content-center">
+                <div className='mt-5 specialBackground'
+                   />
                 <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
-                    <Image src={HeadphoneGirl} alt="girl"  className='img-responsive' objectFit='cover'/>
+                  <Image src={HeadphoneGirl} alt="girl" className='img-responsive' objectFit='cover'
+                    style={{ zIndex:2, position:'absolute', bottom:0 }} />
                 </div>
+
               </div>
               <div className="col-lg">
                 <h1 className='headings mt-4 mb-4 text-center' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
