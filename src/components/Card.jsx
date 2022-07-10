@@ -10,8 +10,8 @@ export default function Card({name, story, imgSrc, about}) {
         <div className="card-body text-center justify-content-center">
           <div className="d-flex">
             <div className='mx-auto'>
-              <Image src={imgSrc} alt="thumbnail" className='rounded-circle img-thumbnail' style={{borderRadius:'50%'}}
-                height={112} width={112} />
+              <Image src={imgSrc} alt="thumbnail" className='rounded-circle img-thumbnail'
+                height={115} width={115} style={{borderRadius:'50%'}} />
             </div>
             <FontAwesomeIcon className="p-2" icon={faHeart} color='#FF2395'/>
             <FontAwesomeIcon className="p-2" icon={faEllipsisV} />

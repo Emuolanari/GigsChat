@@ -4,7 +4,7 @@ import WaitingListBtn from '../src/components/WaitingListBtn'
 import GroupGirl from './../src/assets/GroupGirl.png'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
-import whiteWoman from './../src/assets/whiteWoman.jpg'
+import ThumbNailGirl from './../src/assets/thumbNailGirl.png'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faCirclePlay} from "@fortawesome/free-solid-svg-icons"
 
@@ -14,7 +14,7 @@ export default function Home() {
       <div className='container'>
         <div className='row'>
           <div className='col-md'>
-            <div className='d-flex flex-column justify-content-start h-100'>
+            <div className='d-flex flex-column justify-content-start h-100 mt-5'>
               <h1 className='headings' style={{fontFamily: 'Raleway'}}>Find, connect with, and hire your favourite influencers and creators
               </h1>
               <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings,
@@ -66,7 +66,7 @@ export default function Home() {
           imgSrc={NigerGirl} about={'Marketing manager, Big Brand Inc.'}/>
           <Card name={'Amara Elechi'} 
           story ={'I never have to worry about getting my payments, as they are done securely through GigsChat'} 
-          imgSrc={whiteWoman} about={'Dancer and tiktok influencer'} />
+          imgSrc={ThumbNailGirl} about={'Dancer and tiktok influencer'} />
         </div>
       </div>
 
