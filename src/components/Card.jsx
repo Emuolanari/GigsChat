@@ -13,7 +13,7 @@ export default function Card({name, story, imgSrc, about}) {
               <Image src={imgSrc} alt="thumbnail" className='rounded-circle img-thumbnail' style={{borderRadius:'50%'}}
                 height={112} width={112} />
             </div>
-            <FontAwesomeIcon className="p-2" icon={faHeart} />
+            <FontAwesomeIcon className="p-2" icon={faHeart} color='#FF2395'/>
             <FontAwesomeIcon className="p-2" icon={faEllipsisV} />
 
           </div>
@@ -21,9 +21,9 @@ export default function Card({name, story, imgSrc, about}) {
           
           <p className="card-text">{story}</p>
           <div className="d-flex justify-content-around">
-            <FontAwesomeIcon className="p-2" icon={faInstagram} size={'2x'} />
-            <FontAwesomeIcon className="p-2" icon={faFacebook} size={'2x'}/>
-            <FontAwesomeIcon className="p-2" icon={faTwitter} size={'2x'}/>
+            <FontAwesomeIcon className="p-2" icon={faInstagram} size={'2x'} color={'#AB00D1'}/>
+            <FontAwesomeIcon className="p-2" icon={faFacebook} size={'2x'} color={'#0171D4'}/>
+            <FontAwesomeIcon className="p-2" icon={faTwitter} size={'2x'} color={'#05E7EF'}/>
 
           </div>
         </div>
