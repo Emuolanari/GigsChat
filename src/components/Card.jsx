@@ -5,7 +5,7 @@ import {faEllipsisV, faHeart} from "@fortawesome/free-solid-svg-icons"
 
 export default function Card({name, story, imgSrc, about}) {
   return (
-    <div className='col-4'>
+    <div className='col'>
       <div className="card shadow p-4 mb-3" style={{width:'90%', minWidth: '16rem', minHeight:'28rem', borderRadius:15 }}>
         <div className="card-body text-center justify-content-center">
           <div className="d-flex">
