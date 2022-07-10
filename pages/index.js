@@ -37,7 +37,7 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className='container'>
           <div className='row justify-content-center text-center'>
-            <h1 className='headings pb-4' style={{fontFamily: 'Raleway'}}>Watch demo video</h1>
+            <h1 className='headings pb-4 pt-4' style={{fontFamily: 'Raleway'}}>Watch demo video</h1>
             <Image src={NigerGirl} width = {600} height= {400} alt='girl2' layout='intrinsic'/>
           </div>
         </div>
