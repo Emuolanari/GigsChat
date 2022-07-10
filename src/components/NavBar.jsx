@@ -11,7 +11,7 @@ export default function NavBar(){
         <Navbar bg="white" expand="lg">
             <Container>
                 <Navbar.Brand as={Link} href="/">
-                    <Image src={LOGO} alt='logo'/>
+                    <Image src={LOGO} alt='logo' style={{cursor: 'pointer'}}/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
