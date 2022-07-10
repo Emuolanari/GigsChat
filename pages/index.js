@@ -6,7 +6,7 @@ import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
 import MiniCard from '../src/components/MiniCard'
-import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faCirclePlay} from "@fortawesome/free-solid-svg-icons"
+import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH} from "@fortawesome/free-solid-svg-icons"
 
 export default function Home() {
   return (

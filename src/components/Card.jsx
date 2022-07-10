@@ -5,13 +5,13 @@ import {faEllipsisV, faHeart} from "@fortawesome/free-solid-svg-icons"
 
 export default function Card({name, story, imgSrc, about}) {
   return (
-    <div className='col'>
-      <div className="card shadow p-4 mb-3" style={{ minWidth: '16rem', minHeight:'28rem', borderRadius:15 }}>
+    <div className='col-4'>
+      <div className="card shadow p-4 mb-3" style={{width:'90%', minWidth: '16rem', minHeight:'28rem', borderRadius:15 }}>
         <div className="card-body text-center justify-content-center">
           <div className="d-flex">
             <div className='mx-auto'>
               <Image src={imgSrc} alt="thumbnail" className='rounded-circle img-thumbnail'
-                height={115} width={115} style={{borderRadius:'50%'}} />
+                height={100} width={100} style={{borderRadius:'50%'}} />
             </div>
             <FontAwesomeIcon className="p-2" icon={faHeart} color='#FF2395'/>
             <FontAwesomeIcon className="p-2" icon={faEllipsisV} />
