@@ -15,7 +15,7 @@ export default function Home() {
         <div className='row'>
           <div className='col-md'>
             <div className='d-flex flex-column justify-content-start h-100 mt-5'>
-              <h1 className='headings' style={{fontFamily: 'Raleway'}}>Find, connect with, and hire your favourite influencers and creators
+              <h1 className='headings' >Find, connect with, and hire your favourite influencers and creators
               </h1>
               <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings,
                 secure payments,
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className='container'>
           <div id='demo' className='row justify-content-center text-center'>
-            <h1 className='headings pb-4 pt-4' style={{fontFamily: 'Raleway'}}>Watch demo video</h1>
+            <h2 className='headings pb-4 pt-4' >Watch demo video</h2>
             <Image src={NigerGirl} width = {600} height= {400} alt='girl2' layout='intrinsic'/>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
       <div className='container mt-5'>
         <div className='row'>
           <div className="col">
-            <h1 className='headings' style={{fontFamily: 'Raleway'}}>From conversations, agreeing and tracking objectives, to payments, all in one place</h1>
+            <h2 className='headings' >From conversations, agreeing and tracking objectives, to payments, all in one place</h2>
           </div>
           <div className="col">
 
@@ -57,7 +57,7 @@ export default function Home() {
 
       <div className='container mt-5'>
         <div className="row justify-content-center">
-          <h1 style={{fontFamily: 'Raleway'}} className='headings text-center'>Choose from multiple influencer categories</h1>
+          <h2 className='headings text-center'>Choose from multiple influencer categories</h2>
           <Card name={'Tunde Ajayi'} 
           story ={'Using GigsChat allowed me to speak to only financially commited clients and manage their expectations easily'} 
           imgSrc={HeadphoneGirl} about={'Up and coming photographer'}/>
@@ -72,7 +72,7 @@ export default function Home() {
 
       <div className="container mt-5">
         <div className="row">
-        <h1 className='headings text-center' style={{fontFamily: 'Raleway'}}>Built for convenience and allows you focus on what really matters</h1>
+        <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
         </div>
       </div>
 
@@ -89,7 +89,7 @@ export default function Home() {
 
               </div>
               <div id='benefits' className="col-lg">
-                <h1 className='headings mt-4 mb-4 text-center' style={{fontFamily: 'Raleway'}}>Benefits of using GigsChat</h1>
+                <h2 className='headings mt-4 mb-4 text-center'>Benefits of using GigsChat</h2>
                 <div className="miniCards">
                   <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar} iconColor={'#0BC5B9'}/>
                   <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar} iconColor={'#FFAC0E'}/>
@@ -110,7 +110,7 @@ export default function Home() {
       <div className="container mt-5">
         <div className="row">
           <div className="col">
-            <h1 className='headings' style={{fontFamily: 'Raleway'}}>An Ecosystem of the business of Social Media</h1>
+            <h2 className='headings'>An Ecosystem of the business of Social Media</h2>
           </div>
           <div className="col">
 
