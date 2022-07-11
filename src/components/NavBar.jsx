@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Container, Navbar, Nav } from "react-bootstrap";
 import WaitingListBtn from './WaitingListBtn';
 import LOGO from './../assets/logo.svg'
+import Logo from './Logo';
 import Image from 'next/image';
 
 
@@ -11,7 +12,8 @@ export default function NavBar(){
         <Navbar bg="white" expand="lg">
             <Container>
                 <Navbar.Brand as={Link} href="/">
-                    <Image src={LOGO} alt='logo' style={{cursor: 'pointer'}}/>
+                 <Logo fill={'#001817'}/>
+                    {/* <Image src={} alt='logo' style={{cursor: 'pointer'}}/> */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
