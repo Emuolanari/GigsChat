@@ -66,10 +66,12 @@ export default function Home() {
 
 
       <div className='container vertical-center mt-5'>
-        <div className='row'>
+        <div className='row' style={{height:'100%'}}>
           <div className="col">
+            <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
               <h2 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
                 place</h2>
+            </div>
           </div>
           <div className="col">
             <div className="d-flex  flex-column">
@@ -161,7 +163,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container vertical-center mt-5">
+      <div className="container mt-5">
         <div className="row">
           <div className="col">
             <h2 className='headings'>An Ecosystem of the business of Social Media</h2>
