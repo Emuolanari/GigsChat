@@ -53,7 +53,7 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className='container'>
           <div id='demo' className='row justify-content-center text-center'>
-            <h2 className='headings pb-4 pt-4' >Watch demo video</h2>
+            <h2 className='pb-4 pt-4' >Watch demo video</h2>
             <div className='position-relative d-flex justify-content-center' style={{minWidth: 200, width:600, minHeight: '90%'}}>
               <div className='position-absolute' style={{backgroundColor:'rgba(59,60,67,0)', justifyContent:'center', height:80, width:'95.5%', zIndex:20, bottom:0}}>
                 <FontAwesomeIcon className="p-2" icon={faPlayCircle} color={'#0BC5B9'} size={'3x'} />
