@@ -4,9 +4,11 @@ import WaitingListBtn from '../src/components/WaitingListBtn'
 import GroupGirl from './../src/assets/GroupGirl.png'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
+import Iphone from './../src/assets/iphone.png'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
 import MiniCard from '../src/components/MiniCard'
-import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH} from "@fortawesome/free-solid-svg-icons"
+import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
@@ -38,10 +40,16 @@ export default function Home() {
         <div className='container'>
           <div id='demo' className='row justify-content-center text-center'>
             <h2 className='headings pb-4 pt-4' >Watch demo video</h2>
-            <Image src={NigerGirl} width = {600} height= {400} alt='girl2' layout='intrinsic'/>
+            <div className='position-relative d-flex justify-content-center' style={{minWidth: 200, width:600, minHeight: '90%'}}>
+              <div className='position-absolute' style={{backgroundColor:'rgba(59,60,67,0.7)', justifyContent:'center', height:80, width:'95.5%', zIndex:20, bottom:0}}>
+                <FontAwesomeIcon className="p-2" icon={faPlayCircle} color={'#0BC5B9'} size={'3x'} />
+              </div>
+              <Image src={NigerGirl} alt='girl2' objectFit='cover' style={{ position:'absolute', bottom:0, borderTopLeftRadius:10, borderTopRightRadius:10 }}/>
+            </div>
           </div>
         </div>
       </div>
+
 
 
       <div className='container mt-5'>
@@ -50,7 +58,7 @@ export default function Home() {
             <h2 className='headings' >From conversations, agreeing and tracking objectives, to payments, all in one place</h2>
           </div>
           <div className="col">
-
+            
           </div>
         </div>
       </div>
@@ -72,7 +80,13 @@ export default function Home() {
 
       <div className="container mt-5">
         <div className="row">
-        <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
+          <div className="col">
+            <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
+            <div>
+              {/* <Image src={Iphone} alt='iphone' objectFit='cover' /> */}
+            </div>
+
+          </div>
         </div>
       </div>
 
