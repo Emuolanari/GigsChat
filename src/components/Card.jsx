@@ -23,18 +23,18 @@ export default function Card({name, story, imgSrc, about, randomFollowersForNow}
           <div className="d-flex justify-content-around">
             <div className='d-flex flex-column'>
               <FontAwesomeIcon className="p-2" icon={faInstagram} size={'2x'} color={'#AB00D1'} />
-              {randomFollowersForNow &&<span style={{fontFamily:'Raleway'}}>{randomFollowersForNow}K</span> }
+              {randomFollowersForNow &&<span style={{fontFamily:'Raleway', fontWeight:600}}>{randomFollowersForNow}K</span> }
               {randomFollowersForNow&& <span className='text-muted'>Followers</span>}
             </div>
             <div className="d-flex flex-column">
               <FontAwesomeIcon className="p-2" icon={faFacebook} size={'2x'} color={'#0171D4'} />
-              {randomFollowersForNow &&<span style={{fontFamily:'Raleway'}}>{randomFollowersForNow/2}K</span> }
+              {randomFollowersForNow &&<span style={{fontFamily:'Raleway', fontWeight:600}}>{randomFollowersForNow/2}K</span> }
               {randomFollowersForNow&& <span className='text-muted'>Followers</span>}
             </div>
 
             <div className="d-flex flex-column">
               <FontAwesomeIcon className="p-2" icon={faTwitter} size={'2x'} color={'#05E7EF'} />
-              {randomFollowersForNow &&<span style={{fontFamily:'Raleway'}}>{randomFollowersForNow/5}K</span> } 
+              {randomFollowersForNow &&<span style={{fontFamily:'Raleway', fontWeight:600}}>{randomFollowersForNow/5}K</span> } 
              {randomFollowersForNow&& <span className='text-muted'>Followers</span>}
             </div>
 
