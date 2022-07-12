@@ -37,6 +37,7 @@ input[type="text"] {
   display: flex;
   align-items: center;
 }
+
 .miniCards {
   display: flex;
   flex-direction: row;
@@ -104,6 +105,13 @@ input[type="text"] {
 
   .headings{
     font-size: 1rem;
+  }
+
+  .vertical-center {
+    min-height: 300px;
+  
+    display: flex;
+    align-items: center;
   }
 
 
