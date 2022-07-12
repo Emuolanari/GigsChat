@@ -11,7 +11,7 @@ export default function Card({name, story, imgSrc, about}) {
           <div className="d-flex">
             <div className='mx-auto'>
               <Image src={imgSrc} alt="thumbnail" className='rounded-circle img-thumbnail'
-                height={100} width={100} style={{borderRadius:'50%'}} />
+                height={100} width={100} style={{borderRadius:'50%'}} objectFit='cover'/>
             </div>
             <FontAwesomeIcon className="p-2" icon={faHeart} color='#FF2395'/>
             <FontAwesomeIcon className="p-2" icon={faEllipsisV} />
