@@ -15,7 +15,8 @@ a {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800 !important;
+  font-weight: 600 !important;
+  font-size: 3.5rem !important;
 }
 
 a {
@@ -120,6 +121,12 @@ input[type="text"] {
 }
 
 @media only screen and (max-width: 1000px) {
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+  }
 
   .headings{
     font-size: 1rem;

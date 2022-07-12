@@ -31,7 +31,7 @@ export default function Home() {
         <div className='row'>
           <div className='col-md'>
             <div className='d-flex flex-column justify-content-start h-100 mt-5'>
-              <h1 className='headings' >Find, connect with, and hire your favourite influencers and creators
+              <h1 className='headings' style={{ lineHeight:1.5 }} >Find, connect with, and hire your favourite influencers and creators
               </h1>
               <p className='pt-4 pb-4'>The platform for the Business of Social Media. we help with scheduling bookings,
                 secure payments,
