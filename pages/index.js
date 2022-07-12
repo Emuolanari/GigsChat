@@ -38,7 +38,7 @@ export default function Home() {
                 conversations and dispute management</p>
               <div style={{display:'flex'}} id='inputCol'><input style={{ border: '1px solid gray'}} type="text"
                   placeholder='Enter email address' />
-                <WaitingListBtn passedColor={'#0bc5bx9'} />
+                <WaitingListBtn passedColor={'#0bc5b9'} />
               </div>
             </div>
 
