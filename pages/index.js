@@ -53,12 +53,12 @@ export default function Home() {
       <div className="container-fluid simple-linear mt-5">
         <div className='container'>
           <div id='demo' className='row justify-content-center text-center'>
-            <h1 className='pb-4 pt-4' >Watch demo video</h1>
+            <h2 className='pb-4 pt-4' >Watch demo video</h2>
             <div className='position-relative d-flex justify-content-center' style={{minWidth: 200, width:600, minHeight: '90%'}}>
               <div className='position-absolute' style={{backgroundColor:'rgba(59,60,67,0)', justifyContent:'center', height:80, width:'95.5%', zIndex:20, bottom:0}}>
                 <FontAwesomeIcon className="p-2" icon={faPlayCircle} color={'#0BC5B9'} size={'3x'} />
               </div>
-              <Image src={NigerGirl} alt='girl2' objectFit='cover' style={{ position:'absolute', bottom:0, borderTopLeftRadius:10, borderTopRightRadius:10 }}/>
+              <Image src={NigerGirl} alt='girl2' objectFit='cover'style={{ position:'absolute', bottom:0, borderTopLeftRadius:10, borderTopRightRadius:10 }}/>
             </div>
           </div>
         </div>
@@ -70,8 +70,8 @@ export default function Home() {
         <div className='row' style={{height:'100%'}}>
           <div className="col">
             <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
-              <h1 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
-                place</h1>
+              <h2 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
+                place</h2>
             </div>
           </div>
           <div className="col">
@@ -108,7 +108,7 @@ export default function Home() {
 
       <div className='container mt-5'>
         <div className="row justify-content-center">
-          <h1 className='headings text-center'>Choose from multiple influencer categories</h1>
+          <h2 className='headings text-center'>Choose from multiple influencer categories</h2>
           <Card name={'Tunde Ajayi'} 
           story ={'Using GigsChat allowed me to speak to only financially commited clients and manage their expectations easily'} 
           imgSrc={HeadphoneGirl} about={'Up and coming photographer'} randomFollowersForNow={500}/>
@@ -124,7 +124,7 @@ export default function Home() {
       <div className="container mt-5">
         <div className="row">
           <div className="col">
-            <h1 className='headings text-center'>Built for convenience and allows you focus on what really matters</h1>
+            <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
             <div>
               {/* <Image src={Iphone} alt='iphone' objectFit='cover' /> */}
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
 
               </div>
               <div id='benefits' className="col-lg">
-                <h1 className='headings mt-4 mb-4 text-center'>Benefits of using GigsChat</h1>
+                <h2 className='headings mt-4 mb-4 text-center'>Benefits of using GigsChat</h2>
                 <div className="miniCards">
                   <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar} iconColor={'#0BC5B9'}/>
                   <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar} iconColor={'#FFAC0E'}/>
@@ -167,7 +167,7 @@ export default function Home() {
       <div className="container mt-5">
         <div className="row">
           <div className="col">
-            <h1 className='headings'>An Ecosystem of the business of Social Media</h1>
+            <h2 className='headings'>An Ecosystem of the business of Social Media</h2>
           </div>
           <div className="col">
 

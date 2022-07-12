@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:ital,wght@0,100;0,200;0,400;0,800;1,600&display=swap');
 html,
 body {
   padding: 0;
@@ -15,6 +15,17 @@ a {
 
 h1 {
   font-family: 'Raleway', sans-serif;
+  font-weight: 800 !important;
+}
+
+p, span{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400 !important;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600 !important;
 }
 
 input[type="text"]::placeholder {                
@@ -68,6 +79,7 @@ input[type="text"] {
 .customMovingImg11 {
   justify-self: center;
   align-self: center;
+  flex: 1;
 }
 
 .customMovingImg2 {
@@ -77,6 +89,7 @@ input[type="text"] {
 .customMovingImg21 {
   justify-self: end;
   align-self: center;
+  flex: 1;
 }
 
 .specialBackground {
