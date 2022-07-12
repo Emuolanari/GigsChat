@@ -84,7 +84,7 @@ input[type="text"] {
 
 .customMovingImg11 {
   justify-self: center;
-  margin-left: 10%;
+  margin-left: 1%;
   flex: 1;
 }
 
@@ -94,7 +94,7 @@ input[type="text"] {
 }
 .customMovingImg21 {
   justify-self: end;
-  margin-right: 10%;
+  margin-right: 11%;
   flex: 1;
 }
 
