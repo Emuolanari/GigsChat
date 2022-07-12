@@ -10,10 +10,10 @@ export default function MiniCard({title, body, icon, iconColor}) {
       </div>
       <div className="card-body text-center">
         <div className='bg-info.bg-gradient'>
-          <p className='card-title'>{title}</p>
+          <p className='card-title' style={{fontFamily:'Raleway', fontWeight:400}}>{title}</p>
         </div>
         <div>
-          <span className='text-muted'>{body}</span>
+          <span className='text-muted' style={{fontFamily:'Raleway', fontWeight:200}}>{body}</span>
         </div>
       </div>
     </div>
