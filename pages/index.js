@@ -38,7 +38,7 @@ export default function Home() {
                 conversations and dispute management</p>
               <div style={{display:'flex'}} id='inputCol'><input style={{ border: '1px solid gray'}} type="text"
                   placeholder='Enter email address' />
-                <WaitingListBtn passedColor={'#0bc5b9'} />
+                <WaitingListBtn passedColor={'#0bc5bx9'} />
               </div>
             </div>
 
@@ -75,11 +75,11 @@ export default function Home() {
             </div>
           </div>
           <div className="col-6">
-            <div className="d-flex  flex-column align-items-center">
+            <div className="d-flex  flex-column">
               <div className= {`position-relative d-flex ${time? 'customMovingImg1' : 'customMovingImg11'}`}>
                 <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
                 <div className=''>
-                  <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={190} height={190}
+                  <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={170} height={170}
                     style={{borderRadius:'50%', position:'absolute', bottom:0 }} />
                 </div>
 
