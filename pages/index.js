@@ -5,11 +5,26 @@ import GroupGirl from './../src/assets/GroupGirl.png'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
+import WomanOnMobile from './../src/assets/womanonmobile.png'
+import { useEffect, useState } from 'react'
+import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
+
+  const [time, setTime] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => setTime(!time), 2000)
+    console.log('time', time);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [time])
+
   return (
     <div className=' mt-5'>
       <div className='container'>
@@ -53,11 +68,33 @@ export default function Home() {
 
       <div className='container mt-5'>
         <div className='row'>
-          <div className="col">
-            <h2 className='headings' >From conversations, agreeing and tracking objectives, to payments, all in one place</h2>
+          <div className="col-6">
+            <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
+              <h2 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
+                place</h2>
+            </div>
           </div>
-          <div className="col">
-            
+          <div className="col-6">
+            <div className="d-flex  flex-column align-items-center">
+              <div className= {`position-relative d-flex ${time? 'customMovingImg1' : 'customMovingImg11'}`}>
+                <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
+                <div className=''>
+                  <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={190} height={190}
+                    style={{borderRadius:'50%', position:'absolute', bottom:0 }} />
+                </div>
+
+              </div>
+
+              <div className={`position-relative d-flex justify-content-center ${time? 'customMovingImg2' : 'customMovingImg21'}`}>
+              <div className='mt-5 ovalBackground' style={{backgroundColor:'#E48EB1'}} />
+              <div className=''>
+                <Image src={WomanOnMobile2} alt='iphone' objectFit='contain' width={170} height={170}
+                  style={{borderRadius:'50%'}} />
+              </div>
+
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
