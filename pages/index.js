@@ -80,13 +80,13 @@ export default function Home() {
 
       <div className='container vertical-center mt-5'>
         <div className='row' style={{height:'100%'}}>
-          <div className="col">
+          <div className="col-md-6">
             <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
               <h2 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
                 place</h2>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6">
               {time&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
               </div>}
