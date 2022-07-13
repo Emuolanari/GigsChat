@@ -11,6 +11,7 @@ import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Message from '../src/components/Message'
 
 export default function Home() {
 
@@ -43,7 +44,18 @@ export default function Home() {
 
           </div>
           <div className='col-md'>
-            <Image className='img-responsive' src={GroupGirl} alt="girl" objectFit='contain' />
+          <div className="col-lg position-relative d-flex justify-content-center">
+                <div className='position-absolute' style={{zIndex:40, left:0, bottom:3}}>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'/>
+                </div>
+                <div className='position-absolute' style={{zIndex:40, right:0, bottom:100}}>
+                  <Message name='Jenny Wilson' message='No more messages from unserious clients'/>
+                </div>
+                <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
+                <Image className='img-responsive' src={GroupGirl} alt="girl" objectFit='contain' />
+                </div>
+
+              </div>
           </div>
         </div>
 
@@ -142,8 +154,8 @@ export default function Home() {
                   <Image src={HeadphoneGirl} alt="girl" className='img-responsive' objectFit='cover'
                     style={{ zIndex:2, position:'absolute', bottom:0 }} />
                 </div>
-
               </div>
+
               <div id='benefits' className="col-lg">
                 <h2 className='headings mt-4 mb-4 text-center'>Benefits of using GigsChat</h2>
                 <div className="miniCards">
