@@ -12,6 +12,7 @@ import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Message from '../src/components/Message'
+import InitialsMessage from '../src/components/InitialsMessage'
 
 export default function Home() {
 
@@ -88,25 +89,30 @@ export default function Home() {
           <div className="col">
             <div className="d-flex  flex-column">
               <div className="d-flex flex-column align-items-center">
+              {/* <InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/>
+              <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/> */}
                 <div className={`position-relative d-flex ${time? 'customMovingImg1' : 'customMovingImg11' }`}>
                   <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
                   <div className=''>
                     <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={170} height={170}
                       style={{borderRadius:'50%', position:'absolute', bottom:0 }} />
                   </div>
-
                 </div>
               </div>
               <div className="d-flex flex-column align-items-end">
-                <div className={`position-relative d-flex justify-content-center ${time? 'customMovingImg2'
-                  : 'customMovingImg21' }`}>
-                  <div className='mt-5 ovalBackground' style={{backgroundColor:'#E48EB1'}} />
-                  <div className=''>
-                    <Image src={WomanOnMobile2} alt='iphone' objectFit='contain' width={170} height={170}
-                      style={{borderRadius:'50%'}} />
-                  </div>
+                <div className={`d-flex  ${time? 'customMovingImg2'
+                      : 'customMovingImg21' }`}>
+                    <InitialsMessage message='All my project milestones were easy to set, track and review' initials='Cj' color='#37D0C7'/>
+                    <div className={`position-relative d-flex justify-content-center`}>
+                      <div className='mt-5 ovalBackground' style={{backgroundColor:'#E48EB1'}} />
+                      <div className=''>
+                        <Image src={WomanOnMobile2} alt='iphone' objectFit='contain' width={170} height={170}
+                          style={{borderRadius:'50%'}} />
+                      </div>
 
+                    </div>
                 </div>
+
               </div>
 
 
