@@ -89,15 +89,21 @@ export default function Home() {
           <div className="col">
             <div className="d-flex  flex-column">
               <div className="d-flex flex-column align-items-center">
-              {/* <InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/>
-              <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/> */}
-                <div className={`position-relative d-flex ${time? 'customMovingImg1' : 'customMovingImg11' }`}>
-                  <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
-                  <div className=''>
-                    <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={170} height={170}
-                      style={{borderRadius:'50%', position:'absolute', bottom:0 }} />
+                <div className={`d-flex ${time? 'customMovingImg1' : 'customMovingImg11' }`}>
+                  
+                  <div className={`position-relative`}>
+                    <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
+                    <div className=''>
+                      <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={170} height={170}
+                        style={{borderRadius:'50%', position:'absolute', bottom:0 }} />
+                    </div>
+                  </div>
+                  <div className="d-flex flex-column">
+                  <span className='mt-4 mb-4'>{time?<InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/>:<InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>}</span>
+                    <span className='mt-4'>{time?<InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>:<InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/>}</span>
                   </div>
                 </div>
+
               </div>
               <div className="d-flex flex-column align-items-end">
                 <div className={`d-flex  ${time? 'customMovingImg2'
