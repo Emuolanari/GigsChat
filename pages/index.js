@@ -93,7 +93,7 @@ export default function Home() {
 
               <div className="d-flex flex-column align-items-center mb-5">
                 <div className={`d-flex`}>
-                  <div className={`position-relative d-flex justify-content-center`}>
+                  <div className={`position-relative d-flex`}>
                     <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
                     <div className={`${!time ?'align-self-end justify-self-center':'justify-self-start align-self-start'}`}>
                         <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={170} height={170}
