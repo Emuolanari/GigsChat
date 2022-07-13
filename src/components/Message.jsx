@@ -3,7 +3,7 @@ import NigerGirl from './../assets/NigerGirl.png'
 
 const Message = ({name, message}) => {
   return (
-    <div className="d-flex rounded align-items-center shadow-sm" style={{ backgroundColor:'rgba(240,240,240,0.8)', maxWidth:200, height: 80, fontSize:10, padding:4 }}>
+    <div className="d-flex rounded align-items-center shadow-sm" style={{ backgroundColor:'rgba(255,255,255,0.9)', maxWidth:200, height: 80, fontSize:10, padding:4 }}>
         <div className="d-flex justify-content-between" style={{width:'100%'}}>
             <div className="p-1">
                 <Image src={NigerGirl} alt='message' objectFit="cover" height={55} width={55} style={{borderRadius:'50%'}}/>

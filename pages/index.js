@@ -45,10 +45,10 @@ export default function Home() {
           </div>
           <div className='col-md'>
           <div className="col-lg position-relative d-flex justify-content-center">
-                <div className='position-absolute' style={{zIndex:40, left:0, bottom:3}}>
+                <div className='position-absolute' style={{zIndex:40, left:3, bottom:3}}>
                   <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'/>
                 </div>
-                <div className='position-absolute' style={{zIndex:40, right:0, bottom:100}}>
+                <div className='position-absolute' style={{zIndex:40, right:3, bottom:100}}>
                   <Message name='Jenny Wilson' message='No more messages from unserious clients'/>
                 </div>
                 <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
