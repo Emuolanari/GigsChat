@@ -91,11 +91,11 @@ export default function Home() {
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
               </div>}
 
-              <div className="d-flex flex-column align-items-center">
+              <div className="d-flex flex-column align-items-center mb-5">
                 <div className={`d-flex`}>
                   <div className={`position-relative d-flex justify-content-center`}>
                     <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
-                    <div className={`${time && 'align-self-end justify-self-center'}`}>
+                    <div className={`${!time ?'align-self-end justify-self-center':'justify-self-start align-self-start'}`}>
                         <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={170} height={170}
                           style={{borderRadius:'50%'}} />
                       </div>
@@ -111,7 +111,7 @@ export default function Home() {
               </div>}
 
               <div className="d-flex flex-column align-items-end">
-                <div className={`d-flex  ${time? 'customMovingImg2'
+                <div className={`d-flex  ${!time? 'customMovingImg2'
                       : 'customMovingImg21' }`}>
                     <InitialsMessage message='All my project milestones were easy to set, track and review' initials='Cj' color='#37D0C7'/>
                     <div className={`position-relative d-flex justify-content-center`}>
