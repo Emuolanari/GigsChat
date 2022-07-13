@@ -130,11 +130,6 @@ input[type="text"] {
     font-size: 1.5rem !important;
   }
 
-  .trow{
-    display: flex;
-    flex-direction: column;
-  }
-
   .headings{
     font-size: 1rem;
   }

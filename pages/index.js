@@ -79,7 +79,7 @@ export default function Home() {
 
 
       <div className='container vertical-center mt-5'>
-        <div className='row trow' style={{height:'100%'}}>
+        <div className='row' style={{height:'100%'}}>
           <div className="col">
             <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
               <h2 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
