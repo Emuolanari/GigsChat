@@ -87,17 +87,15 @@ export default function Home() {
             </div>
           </div>
           <div className="col">
-            <div className="d-flex  flex-column">
               {time&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
               </div>}
 
               <div className="d-flex flex-column align-items-center">
-                <div className={`d-flex ${time? 'customMovingImg1' : 'customMovingImg11' }`}>
-                  
+                <div className={`d-flex`}>
                   <div className={`position-relative d-flex justify-content-center`}>
                     <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
-                    <div className=''>
+                    <div className={`${time && 'align-self-end justify-self-center'}`}>
                         <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={170} height={170}
                           style={{borderRadius:'50%'}} />
                       </div>
@@ -125,13 +123,7 @@ export default function Home() {
 
                     </div>
                 </div>
-
               </div>
-
-
-
-
-            </div>
           </div>
         </div>
       </div>
