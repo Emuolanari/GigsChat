@@ -88,23 +88,31 @@ export default function Home() {
           </div>
           <div className="col">
             <div className="d-flex  flex-column">
+              {time&&<div className='d-flex justify-content-end mb-4'>
+               <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
+              </div>}
+
               <div className="d-flex flex-column align-items-center">
                 <div className={`d-flex ${time? 'customMovingImg1' : 'customMovingImg11' }`}>
                   
-                  <div className={`position-relative`}>
+                  <div className={`position-relative d-flex justify-content-center`}>
                     <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
                     <div className=''>
-                      <Image src={WomanOnMobile} alt='iphone' objectFit='cover' width={170} height={170}
-                        style={{borderRadius:'50%', position:'absolute', bottom:0 }} />
-                    </div>
+                        <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={170} height={170}
+                          style={{borderRadius:'50%'}} />
+                      </div>
                   </div>
                   <div className="d-flex flex-column">
-                  <span className='mt-4 mb-4'>{time?<InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/>:<InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>}</span>
-                    <span className='mt-4'>{time?<InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>:<InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/>}</span>
+                  <span className='mt-4'><InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/></span>
                   </div>
                 </div>
 
               </div>
+
+              {!time&&<div className='d-flex justify-content-center mb-4'>
+               <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
+              </div>}
+
               <div className="d-flex flex-column align-items-end">
                 <div className={`d-flex  ${time? 'customMovingImg2'
                       : 'customMovingImg21' }`}>
@@ -112,7 +120,7 @@ export default function Home() {
                     <div className={`position-relative d-flex justify-content-center`}>
                       <div className='mt-5 ovalBackground' style={{backgroundColor:'#E48EB1'}} />
                       <div className=''>
-                        <Image src={WomanOnMobile2} alt='iphone' objectFit='contain' width={170} height={170}
+                        <Image src={WomanOnMobile2} alt='woman' objectFit='contain' width={170} height={170}
                           style={{borderRadius:'50%'}} />
                       </div>
 

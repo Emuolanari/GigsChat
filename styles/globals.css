@@ -79,6 +79,7 @@ input[type="text"] {
 .customMovingImg1 {
   justify-self: start;
   align-self: start;
+  flex: 1;
 }
 
 .customMovingImg11 {
@@ -90,6 +91,7 @@ input[type="text"] {
 .customMovingImg2 {
   justify-self: end;
   align-self: end;
+  flex: 1;
 }
 .customMovingImg21 {
   justify-self: end;
