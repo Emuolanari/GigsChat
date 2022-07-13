@@ -7,7 +7,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -128,6 +127,11 @@ input[type="text"] {
     font-size: 1.5rem !important;
   }
 
+  .trow{
+    display: flex;
+    flex-direction: column;
+  }
+
   .headings{
     font-size: 1rem;
   }
@@ -169,4 +173,5 @@ input[type="text"] {
     /* Firefox, Chrome, Opera */ 
     min-width: 300px;
   } 
+
 }

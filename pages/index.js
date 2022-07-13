@@ -49,7 +49,7 @@ export default function Home() {
 
       </div>
 
-      <div className="container-fluid simple-linear mt-5">
+      <div className="container-fluid simple-linear">
         <div className='container'>
           <div id='demo' className='row justify-content-center text-center'>
             <h2 className='pb-4 pt-4' >Watch demo video</h2>
@@ -66,7 +66,7 @@ export default function Home() {
 
 
       <div className='container vertical-center mt-5'>
-        <div className='row' style={{height:'100%'}}>
+        <div className='row trow' style={{height:'100%'}}>
           <div className="col">
             <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
               <h2 className='headings'>From conversations, agreeing and tracking objectives, to payments, all in one
