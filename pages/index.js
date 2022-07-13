@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <div className="col">
             <div className="d-flex  flex-column">
-              {time&&<div className='d-flex justify-content-end mb-4'>
+              {time&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
               </div>}
 
@@ -102,14 +102,13 @@ export default function Home() {
                           style={{borderRadius:'50%'}} />
                       </div>
                   </div>
-                  <div className="d-flex flex-column">
-                  <span className='mt-4'><InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/></span>
-                  </div>
+                  <span className={`mt-4 ${time?'align-self-center':'align-self-end'}`}><InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395'/></span>
+                 
                 </div>
 
               </div>
 
-              {!time&&<div className='d-flex justify-content-center mb-4'>
+              {!time&&<div className='d-flex justify-content-center mt-4 mb-4'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
               </div>}
 

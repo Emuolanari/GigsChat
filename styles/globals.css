@@ -76,15 +76,16 @@ input[type="text"] {
   flex-direction: column;
 }
 
-.customMovingImg1 {
+.customMovingImg11 {
   justify-self: start;
   align-self: start;
   flex: 1;
 }
 
-.customMovingImg11 {
+.customMovingImg1 {
   justify-self: center;
-  margin-left: 1%;
+  align-self: center;
+  /* margin-left: 1%; */
   flex: 1;
 }
 
