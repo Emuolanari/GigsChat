@@ -8,6 +8,7 @@ import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
 import WomanOnMobile from './../src/assets/womanonmobile.png'
 import { useEffect, useState } from 'react'
 import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
+import Iphone from './../src/assets/iphone.svg'
 import Aisha from './../src/assets/aisha.png'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
@@ -144,8 +145,8 @@ export default function Home() {
         <div className="row">
           <div className="col">
             <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
-            <div>
-              {/* <Image src={Iphone} alt='iphone' objectFit='cover' /> */}
+            <div className='d-flex justify-content-center'>
+              <Image src={Iphone} alt='iphone' objectFit='cover' />
             </div>
 
           </div>
