@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react'
 import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import Iphone from './../src/assets/iphone.svg'
 import Aisha from './../src/assets/aisha.png'
+import Tunde from './../src/assets/tunde.png'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -131,7 +132,7 @@ export default function Home() {
           <h2 className='headings text-center'>Choose from multiple influencer categories</h2>
           <Card name={'Tunde Ajayi'} 
           story ={'Using GigsChat allowed me to speak to only financially commited clients and manage their expectations easily'} 
-          imgSrc={NigerGirl} about={'Up and coming photographer'} randomFollowersForNow={500}/>
+          imgSrc={Tunde} about={'Up and coming photographer'} randomFollowersForNow={500}/>
           <Card name={'Aisha Ahmed'} 
           story ={'GigsChat allowed me find influencers that fit my marketing budget and have the audience reach I require'} 
           imgSrc={Aisha} about={'Marketing manager, Big Brand Inc.'} />
