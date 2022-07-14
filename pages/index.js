@@ -22,7 +22,7 @@ export default function Home() {
   const [time, setTime] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => setTime(!time), 2000)
+    const interval = setInterval(() => setTime(!time), 1500)
 
     return () => {
       clearInterval(interval);
