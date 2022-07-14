@@ -3,7 +3,6 @@ import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/fre
 import WaitingListBtn from './WaitingListBtn';
 import LOGO from './../assets/logo.svg'
 import Logo from './Logo';
-import Image from 'next/image';
 import FooterBG from './../assets/footerbg.png'
 
 export default function Footer() {
