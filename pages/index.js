@@ -51,12 +51,12 @@ export default function Home() {
 
           </div>
           <div className='col-md'>
-          <div className="col-lg position-relative d-flex justify-content-center">
+              <div className="col-lg position-relative d-flex justify-content-center">
                 <div className='position-absolute' style={{zIndex:40, left:3, bottom:3}}>
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review' imgSrc={Richard}/>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review' imgSrc={Richard} color={'rgba(255,255,255,0.9)'} maxW={200} padding={4}/>
                 </div>
                 <div className='position-absolute' style={{zIndex:40, right:3, bottom:100}}>
-                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}/>
+                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl} color={'rgba(255,255,255,0.9)'} maxW={200} padding={4}/>
                 </div>
                 <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
                 <Image className='img-responsive' src={GroupGirl} alt="girl" objectFit='contain' />
@@ -145,13 +145,29 @@ export default function Home() {
         </div>
       </div>
 
+
       <div className="container mt-5">
         <div className="row">
           <div className="col">
             <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
-            <div className='d-flex justify-content-center'>
-              <Image src={Iphone} alt='iphone' objectFit='cover' />
-            </div>
+
+            <div className="d-flex justify-content-center">
+              <div className="position-relative d-flex justify-content-center" style={{width:'50%'}}>
+                <div className='position-absolute' style={{zIndex:40, left:-30, bottom:70}}>
+                  <Message name='Jenny Wilson' message='No more messages from unserious clients'
+                    imgSrc={CoolGirl} color={'#FFAC0E'} maxW={250} padding={11}/>
+                </div>
+                <div className='position-absolute' style={{zIndex:40, right:-40, top:70}}>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={11}/>
+               </div>
+                <div style={{minHeight:'100%'}}>
+                  <Image className='img-responsive' src={Iphone} alt="iphone" objectFit='cover' />
+                </div>
+              </div>
+
+
+              </div>
 
           </div>
         </div>

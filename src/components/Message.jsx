@@ -1,9 +1,9 @@
 import Image from "next/image"
 import NigerGirl from './../assets/NigerGirl.png'
 
-const Message = ({name, message, imgSrc}) => {
+const Message = ({name, message, imgSrc, color, maxW, padding}) => {
   return (
-    <div className="d-flex rounded align-items-center shadow-sm" style={{ backgroundColor:'rgba(255,255,255,0.9)', maxWidth:200, height: 80, fontSize:10, padding:4 }}>
+    <div className="d-flex align-items-center shadow-sm" style={{ backgroundColor:color, maxWidth:maxW, height: 80, fontSize:10, padding:padding, borderRadius:8 }}>
         <div className="d-flex justify-content-between" style={{width:'100%'}}>
             <div className="p-1" style={{width:'30%'}}>
                 <Image src={imgSrc} alt='message' objectFit="cover" height={55} width={55} style={{borderRadius:'50%'}}/>
