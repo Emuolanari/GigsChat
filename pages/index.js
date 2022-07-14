@@ -10,7 +10,10 @@ import { useEffect, useState } from 'react'
 import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import Iphone from './../src/assets/iphone.svg'
 import Aisha from './../src/assets/aisha.png'
+import CoolGirl from './../src/assets/coolgirl.png'
+import CoolGirl2 from './../src/assets/coolgirl2.png'
 import Tunde from './../src/assets/tunde.png'
+import Richard from './../src/assets/richard.jpg'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -50,10 +53,10 @@ export default function Home() {
           <div className='col-md'>
           <div className="col-lg position-relative d-flex justify-content-center">
                 <div className='position-absolute' style={{zIndex:40, left:3, bottom:3}}>
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review' imgSrc={NigerGirl}/>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review' imgSrc={Richard}/>
                 </div>
                 <div className='position-absolute' style={{zIndex:40, right:3, bottom:100}}>
-                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={Aisha}/>
+                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}/>
                 </div>
                 <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
                 <Image className='img-responsive' src={GroupGirl} alt="girl" objectFit='contain' />
