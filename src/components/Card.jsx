@@ -9,7 +9,7 @@ export default function Card({name, story, imgSrc, about, randomFollowersForNow}
       <div className="card shadow p-4 mb-3" style={{width:'92%', minWidth: '16rem', minHeight:'28rem', borderRadius:15 }}>
         <div className="card-body text-center justify-content-center">
           <div className="d-flex">
-            <div style={{marginLeft:'30%', marginRight:'auto'}}>
+          <div style={{marginLeft:'30%', marginRight:'auto'}}>
               <Image src={imgSrc} alt="thumbnail" className='img-thumbnail'
                 height={100} width={100} style={{borderRadius:'50%'}} objectFit='cover'/>
             </div>

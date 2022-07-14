@@ -8,6 +8,7 @@ import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
 import WomanOnMobile from './../src/assets/womanonmobile.png'
 import { useEffect, useState } from 'react'
 import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
+import Aisha from './../src/assets/aisha.png'
 import MiniCard from '../src/components/MiniCard'
 import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -47,10 +48,10 @@ export default function Home() {
           <div className='col-md'>
           <div className="col-lg position-relative d-flex justify-content-center">
                 <div className='position-absolute' style={{zIndex:40, left:3, bottom:3}}>
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'/>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review' imgSrc={NigerGirl}/>
                 </div>
                 <div className='position-absolute' style={{zIndex:40, right:3, bottom:100}}>
-                  <Message name='Jenny Wilson' message='No more messages from unserious clients'/>
+                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={Aisha}/>
                 </div>
                 <div className='d-flex' style={{minWidth: '100%', minHeight: '90%'}}>
                 <Image className='img-responsive' src={GroupGirl} alt="girl" objectFit='contain' />
@@ -78,7 +79,7 @@ export default function Home() {
 
 
 
-      <div className='container vertical-center mt-5'>
+      <div className='container vertical-center mt-5 '>
         <div className='row' style={{height:'100%'}}>
           <div className="col-md-6">
             <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
@@ -86,7 +87,7 @@ export default function Home() {
                 place</h2>
             </div>
           </div>
-          <div className="col-md-6 mb-5">
+          <div className="col-md-6 mb-5 adjustedHeight">
               {time&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E'/>
               </div>}
@@ -129,10 +130,10 @@ export default function Home() {
           <h2 className='headings text-center'>Choose from multiple influencer categories</h2>
           <Card name={'Tunde Ajayi'} 
           story ={'Using GigsChat allowed me to speak to only financially commited clients and manage their expectations easily'} 
-          imgSrc={HeadphoneGirl} about={'Up and coming photographer'} randomFollowersForNow={500}/>
+          imgSrc={NigerGirl} about={'Up and coming photographer'} randomFollowersForNow={500}/>
           <Card name={'Aisha Ahmed'} 
           story ={'GigsChat allowed me find influencers that fit my marketing budget and have the audience reach I require'} 
-          imgSrc={NigerGirl} about={'Marketing manager, Big Brand Inc.'} />
+          imgSrc={Aisha} about={'Marketing manager, Big Brand Inc.'} />
           <Card name={'Amara Elechi'} 
           story ={'I never have to worry about getting my payments, as they are done securely through GigsChat'} 
           imgSrc={ThumbNailGirl} about={'Dancer and tiktok influencer'} randomFollowersForNow={600}/>
