@@ -35,7 +35,9 @@ h2{
 
 input[type="text"]::placeholder {                
   /* Firefox, Chrome, Opera */ 
-  padding-left: 10px; 
+  padding-left: 8%;
+  padding-right: auto; 
+  font-family: 'Raleway';
 } 
 input[type="text"] {                
   /* Firefox, Chrome, Opera */ 
