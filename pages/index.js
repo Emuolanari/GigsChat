@@ -70,11 +70,11 @@ export default function Home() {
 
       <div className="container-fluid simple-linear">
         <div className='container'>
-          <div id='demo' className='row justify-content-center text-center'>
+          <div id='demo' className='row justify-content-center text-center' style={{paddingLeft:0, paddingRight:0 }}>
             <h2 className='pb-4 pt-4' >Watch demo video</h2>
             <div className='position-relative d-flex justify-content-center' style={{minWidth: 200, width:600, minHeight: '90%'}}>
-              <div className='position-absolute' style={{backgroundColor:'rgba(59,60,67,0)', justifyContent:'center', height:80, width:'95.5%', zIndex:20, bottom:0}}>
-                <FontAwesomeIcon className="p-2" icon={faPlayCircle} color={'#0BC5B9'} size={'3x'} />
+              <div className='position-absolute d-flex align-items-center' style={{backgroundColor:'rgba(58,61,68, 0.8)', justifyContent:'center', height:80, width:'100%', zIndex:20, bottom:0}}>
+                <FontAwesomeIcon className="" icon={faPlayCircle} color={'#0BC5B9'} size={'3x'} />
               </div>
               <Image src={NigerGirl} alt='girl2' objectFit='cover'style={{ position:'absolute', bottom:0, borderTopLeftRadius:10, borderTopRightRadius:10 }}/>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 place</h2>
             </div>
           </div>
-          <div className="col-md-6 mb-5 adjustedHeight">
+          <div className="col-md-6 mb-5 adjustedHeight" style={{height:'500px'}}>
               {time&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E' position='left'/>
               </div>}
