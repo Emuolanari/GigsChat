@@ -11,7 +11,6 @@ import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import Iphone from './../src/assets/iphone.svg'
 import Aisha from './../src/assets/aisha.png'
 import CoolGirl from './../src/assets/coolgirl.png'
-import CoolGirl2 from './../src/assets/coolgirl2.png'
 import Tunde from './../src/assets/tunde.png'
 import Richard from './../src/assets/richard.jpg'
 import MiniCard from '../src/components/MiniCard'
@@ -22,15 +21,15 @@ import InitialsMessage from '../src/components/InitialsMessage'
 
 export default function Home() {
 
-  const [time, setTime] = useState(false);
+  const [timeToChange, setTimeToChange] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => setTime(!time), 1500)
+    const interval = setInterval(() => setTimeToChange(!timeToChange), 1500)
 
     return () => {
       clearInterval(interval);
     };
-  }, [time])
+  }, [timeToChange])
 
   return (
     <div className=' mt-5'>
@@ -93,32 +92,32 @@ export default function Home() {
             </div>
           </div>
           <div className="col-md-6 mb-5 adjustedHeight" style={{height:'500px'}}>
-              {time&&<div className='d-flex justify-content-end'>
+              {timeToChange&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E' position='left'/>
               </div>}
 
               <div className="d-flex flex-column align-items-center mb-5">
                 <div className={`d-flex`}>
-                  <div className={`position-relative d-flex ${!time ?'align-self-end justify-self-center':'justify-self-start align-self-start'}`}>
+                  <div className={`position-relative d-flex ${!timeToChange ?'align-self-end justify-self-center':'justify-self-start align-self-start'}`}>
                     <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
                     <div className={`d-flex`}>
                         <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={170} height={170}
                           style={{borderRadius:'50%', position:'absolute', zIndex:2, bottom:0}} />
                       </div>
                   </div>
-                  <span className={`mt-4 ${time?'align-self-center':'align-self-end'}`}><InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395' position={'left'}/></span>
+                  <span className={`mt-4 ${timeToChange?'align-self-center':'align-self-end'}`}><InitialsMessage message='Now I always get my full payments when I deliver as expected' initials='Kc' color='#FF2395' position={'left'}/></span>
                 </div>
 
               </div>
 
-              {!time&&<div className='d-flex justify-content-center mt-4 mb-4'>
+              {!timeToChange&&<div className='d-flex justify-content-center mt-4 mb-4'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E' position='left'/>
               </div>}
 
               <div className="d-flex flex-column align-items-between">
                 
                     <InitialsMessage message='All my project milestones were easy to set, track and review' initials='Cj' color='#37D0C7' position='right'/>
-                    <div className={`position-relative d-flex ${!time? 'customMovingImg2': 'customMovingImg21' }`}>
+                    <div className={`position-relative d-flex ${!timeToChange? 'customMovingImg2': 'customMovingImg21' }`}>
                       <div className='mt-5 ovalBackground' style={{backgroundColor:'#E48EB1'}} />
                       <div className='d-flex'>
                         <Image src={WomanOnMobile2} alt='woman' objectFit='contain' width={170} height={170}
