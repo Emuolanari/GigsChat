@@ -7,14 +7,14 @@ export default function Card({name, story, imgSrc, about, randomFollowersForNow}
   return (
     <div className='col d-flex justify-content-center align-items-center'>
       <div className="card shadow p-4 mb-3" style={{width:'92%', minWidth: '16rem', minHeight:'28rem', borderRadius:15 }}>
-        <div className="card-body text-center justify-content-center">
-          <div className="d-flex">
-          <div style={{marginLeft:'30%', marginRight:'auto'}}>
+        <div className="card-body text-center justify-content-center position-relative">
+          <FontAwesomeIcon className="p-2 position-absolute" icon={faHeart} color='#FF2395' style= {{top:0, right:20}}/>
+          <FontAwesomeIcon className="p-2 position-absolute" icon={faEllipsisV} style= {{top:0, right:0}}/>
+          <div className="d-flex align-items-center justify-content-center">
               <Image src={imgSrc} alt="thumbnail" className='img-thumbnail'
                 height={100} width={100} style={{borderRadius:'50%'}} objectFit='cover'/>
-            </div>
-            <FontAwesomeIcon className="p-2" icon={faHeart} color='#FF2395'/>
-            <FontAwesomeIcon className="p-2" icon={faEllipsisV} />
+          {/* <div style={{marginLeft:'30%', marginRight:'auto'}}>
+            </div> */}
 
           </div>
           <h5 className="card-title d-flex flex-column mb-4">{name}<span style={{fontSize:13}} className='text-muted'>{about}</span></h5>
