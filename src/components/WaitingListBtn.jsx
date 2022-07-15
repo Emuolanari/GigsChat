@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function WaitingListBtn({passedColor}) {
   return (
-    <button className="rounded text-white border-0"
-      style={{fontFamily:'Raleway', fontWeight:'400', backgroundColor: `${passedColor}`, padding:12}}><span>Join the
+    <button className="responsiveBtn text-white"
+      style={{backgroundColor: `${passedColor}`}}><span>Join the
         waitlist &nbsp;
         <FontAwesomeIcon icon={faArrowRight} /></span>
     </button>
