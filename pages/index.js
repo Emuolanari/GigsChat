@@ -74,7 +74,7 @@ export default function Home() {
             <h2 className='pb-4 pt-4' >Watch demo video</h2>
             <div className='position-relative d-flex justify-content-center px-0' style={{minWidth: 200, width:600, minHeight: '90%'}}>
               <div className='position-absolute d-flex align-items-center' style={{backgroundColor:'rgba(58,61,68, 0.8)', justifyContent:'center', height:80, width:'100%', zIndex:20, bottom:0}}>
-              <Play set='bold' primaryColor='#0BC5B9' secondaryColor='white' size='xlarge'/>
+              <Play set='bulk' primaryColor='white' secondaryColor='#0BC5B9' size='xlarge'/>
               
               </div>
               <Image src={NigerGirl} alt='girl2' objectFit='cover'style={{ position:'absolute', bottom:0, borderTopLeftRadius:10, borderTopRightRadius:10 }}/>
