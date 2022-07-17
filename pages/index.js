@@ -22,7 +22,7 @@ import { Calendar, Lock, People, EditSquare, Filter2, Notification, Play, InfoSq
 
 export default function Home() {
 
-  const [timeToChange, setTimeToChange] = useState(false);
+  const [timeToChange, setTimeToChange] = useState(2);
 
   useEffect(() => {
     const interval = setInterval(() => setTimeToChange(!timeToChange), 1500)
@@ -153,7 +153,7 @@ export default function Home() {
             <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
 
             <div className="d-flex justify-content-center">
-              <div className="position-relative d-flex justify-content-center" style={{width:'50%'}}>
+              <div className="position-relative d-flex justify-content-center text-white" style={{width:'50%'}}>
                 <div className='position-absolute' style={{zIndex:40, left:-46, bottom:170}}>
                   {timeToChange?
                   <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}
