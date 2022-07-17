@@ -14,10 +14,11 @@ import CoolGirl from './../src/assets/coolgirl.png'
 import Tunde from './../src/assets/tunde.png'
 import Richard from './../src/assets/richard.jpg'
 import MiniCard from '../src/components/MiniCard'
-import {faLock, faPeopleGroup, faCalendar, faFunnelDollar, faBell, faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
+import { faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Message from '../src/components/Message'
 import InitialsMessage from '../src/components/InitialsMessage'
+import { Calendar, Lock, People, EditSquare, Filter2, Notification, Play, InfoSquare} from 'react-iconly'
 
 export default function Home() {
 
@@ -73,7 +74,8 @@ export default function Home() {
             <h2 className='pb-4 pt-4' >Watch demo video</h2>
             <div className='position-relative d-flex justify-content-center px-0' style={{minWidth: 200, width:600, minHeight: '90%'}}>
               <div className='position-absolute d-flex align-items-center' style={{backgroundColor:'rgba(58,61,68, 0.8)', justifyContent:'center', height:80, width:'100%', zIndex:20, bottom:0}}>
-                <FontAwesomeIcon className="" icon={faPlayCircle} color={'#0BC5B9'} size={'3x'} />
+              <Play set='bold' primaryColor='#0BC5B9' secondaryColor='white' size='xlarge'/>
+              
               </div>
               <Image src={NigerGirl} alt='girl2' objectFit='cover'style={{ position:'absolute', bottom:0, borderTopLeftRadius:10, borderTopRightRadius:10 }}/>
             </div>
@@ -187,16 +189,28 @@ export default function Home() {
               <div id='benefits' className="col-lg">
                 <h2 className='headings mt-4 mb-4 text-center'>Benefits of using GigsChat</h2>
                 <div className="miniCards">
-                  <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} icon={faFunnelDollar} iconColor={'#0BC5B9'}/>
-                  <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} icon={faCalendar} iconColor={'#FFAC0E'}/>
+                  <MiniCard title={'We help filter only committed clients'} body={'Only speak to financially committed potential clients'} iconColor={'#0BC5B9'}>
+                    <Filter2 set='bold' primaryColor='white' secondaryColor='white'/>
+                  </MiniCard>
+                  <MiniCard title={'Set and complete project milestone'} body={'Set, track and complete project objectives easily'} iconColor={'#FFAC0E'}>
+                    <Calendar set='bold' primaryColor='white' secondaryColor='white'/>
+                  </MiniCard>
                 </div>
                 <div className="miniCards">
-                  <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} icon={faBell} iconColor={'#FD52AB'}/>
-                  <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} icon={faLock} iconColor={'#8C3AAA'}/>
+                  <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} iconColor={'#FD52AB'}>
+                      <Notification set='bold' primaryColor='white' secondaryColor='white'/>
+                  </MiniCard>
+                  <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} iconColor={'#8C3AAA'}>
+                      <Lock set='bold' primaryColor='white' secondaryColor='white'/>
+                  </MiniCard>
                 </div>
                 <div className="miniCards">
-                  <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} icon={faPeopleGroup} iconColor={'#3748C4'}/>
-                  <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} icon={faSquareH} iconColor={'#38C069'}/>
+                  <MiniCard title={'Dispute management'} body={'Dispute resolution team on hand to resolve any disputes between interacting parties'} iconColor={'#3748C4'}>
+                    <People set='bold' primaryColor='white' secondaryColor='white'/>
+                  </MiniCard>
+                  <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} iconColor={'#38C069'}>
+                    {/* <InfoSquare set='bold' primaryColor='white' secondaryColor='white'/> */}
+                  </MiniCard>
                 </div>
               </div>
             </div>
