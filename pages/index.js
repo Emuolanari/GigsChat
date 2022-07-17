@@ -91,7 +91,7 @@ export default function Home() {
                 place</h2>
             </div>
           </div>
-          <div className="col-md-6 mb-5 adjustedHeight" style={{height:'500px'}}>
+          <div className="col-md-6 mb-5 mt-5 adjustedHeight" style={{minHeight:'500px'}}>
               {timeToChange&&<div className='d-flex justify-content-end'>
                <InitialsMessage message='No more messages from unserious clients' initials='Si' color='#FFAC0E' position='left'/>
               </div>}
@@ -101,7 +101,7 @@ export default function Home() {
                   <div className={`position-relative d-flex ${!timeToChange ?'align-self-end justify-self-center':'justify-self-start align-self-start'}`}>
                     <div className='mt-5 ovalBackground' style={{backgroundColor:'#00445E'}} />
                     <div className={`d-flex`}>
-                        <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={170} height={170}
+                        <Image src={WomanOnMobile} alt='woman' objectFit='contain' width={140} height={140}
                           style={{borderRadius:'50%', position:'absolute', zIndex:2, bottom:0}} />
                       </div>
                   </div>
@@ -120,7 +120,7 @@ export default function Home() {
                     <div className={`position-relative d-flex ${!timeToChange? 'customMovingImg2': 'customMovingImg21' }`}>
                       <div className='mt-5 ovalBackground' style={{backgroundColor:'#E48EB1'}} />
                       <div className='d-flex'>
-                        <Image src={WomanOnMobile2} alt='woman' objectFit='contain' width={170} height={170}
+                        <Image src={WomanOnMobile2} alt='woman' objectFit='contain' width={140} height={140}
                           style={{borderRadius:'50%',position:'absolute', zIndex:3, bottom:0}} />
                       </div>
                     </div>

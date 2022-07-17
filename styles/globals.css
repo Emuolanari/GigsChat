@@ -17,6 +17,11 @@ body {
   font-weight: 400;
 }
 
+.respInitialsM{
+  width: 88%;
+  height: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -143,6 +148,11 @@ input[type="text"] {
     bottom:0;
   }
 
+  .respInitialsM{
+    width:85%;
+    height: 100%;
+    font-size: 9px;
+  }
   .responsiveBtn{
     min-height: 60px;
     min-width: 50px;
