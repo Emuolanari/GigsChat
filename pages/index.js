@@ -154,11 +154,11 @@ export default function Home() {
 
             <div className="d-flex justify-content-center">
               <div className="position-relative d-flex justify-content-center" style={{width:'50%'}}>
-                <div className='position-absolute' style={{zIndex:40, left:-30, bottom:70}}>
+                <div className='position-absolute' style={{zIndex:40, left:'-10%', bottom:'23%'}}>
                   <Message name='Jenny Wilson' message='No more messages from unserious clients'
                     imgSrc={CoolGirl} color={'#FFAC0E'} maxW={250} padding={9}/>
                 </div>
-                <div className='position-absolute' style={{zIndex:40, right:-40, top:70}}>
+                <div className='position-absolute' style={{zIndex:40, right:'-14%', top:'22%'}}>
                   <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
                     imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>
                </div>
