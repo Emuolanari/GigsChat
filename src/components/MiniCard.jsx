@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Calendar, Lock } from 'react-iconly'
-
 export default function MiniCard({title, body, iconColor, children}) {
   return (
     <div className='card shadow p-3 mb-3 simple-linear position-relative'

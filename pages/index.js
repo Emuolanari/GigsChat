@@ -155,23 +155,36 @@ export default function Home() {
             <div className="d-flex justify-content-center">
               <div className="position-relative d-flex justify-content-center" style={{width:'50%'}}>
                 <div className='position-absolute' style={{zIndex:40, left:-46, bottom:170}}>
-                  {timeToChange?<Message name='Jenny Wilson' message='No more messages from unserious clients'
-                    imgSrc={CoolGirl} color={'#FFAC0E'} maxW={250} padding={9}/>:
-                    <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>}
+                  {timeToChange?
+                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}
+                    color={'#FFAC0E'} maxW={250} padding={9} />:
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />}
                 </div>
+
+                {timeToChange?<div className='position-absolute' style={{zIndex:40, right:-20, top:100}}>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />
+                </div>:
+                (<>
                 <div className='position-absolute' style={{zIndex:40, right:-20, top:100}}>
-                  {timeToChange?<Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>:<Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>}
-               </div>
+                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />
+                </div>
+                <div className='position-absolute' style={{zIndex:1, right:10, top:100}}>
+                <Message name='Jenny Wilson' message='No more messages from unserious clients' 
+                    color={'#FFAC0E'} maxW={250} padding={9} />
+                </div>
+                </>
+                )
+                }
                 <div style={{minHeight:'100%'}}>
                   <Image className='img-responsive' src={Iphone} alt="iphone" objectFit='cover' />
                 </div>
               </div>
 
 
-              </div>
+            </div>
 
           </div>
         </div>
