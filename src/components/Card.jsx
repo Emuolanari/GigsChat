@@ -13,9 +13,7 @@ export default function Card({name, story, imgSrc, about, randomFollowersForNow}
           <div className="d-flex align-items-center justify-content-center">
               <Image src={imgSrc} alt="thumbnail" className='img-thumbnail'
                 height={100} width={100} style={{borderRadius:'50%'}} objectFit='cover'/>
-          {/* <div style={{marginLeft:'30%', marginRight:'auto'}}>
-            </div> */}
-
+                
           </div>
           <h5 className="card-title d-flex flex-column mb-4">{name}<span style={{fontSize:13}} className='text-muted'>{about}</span></h5>
           

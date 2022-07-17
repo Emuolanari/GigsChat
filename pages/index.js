@@ -154,13 +154,16 @@ export default function Home() {
 
             <div className="d-flex justify-content-center">
               <div className="position-relative d-flex justify-content-center" style={{width:'50%'}}>
-                <div className='position-absolute' style={{zIndex:40, left:'-10%', bottom:'23%'}}>
-                  <Message name='Jenny Wilson' message='No more messages from unserious clients'
-                    imgSrc={CoolGirl} color={'#FFAC0E'} maxW={250} padding={9}/>
+                <div className='position-absolute' style={{zIndex:40, left:-46, bottom:170}}>
+                  {timeToChange?<Message name='Jenny Wilson' message='No more messages from unserious clients'
+                    imgSrc={CoolGirl} color={'#FFAC0E'} maxW={250} padding={9}/>:
+                    <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>}
                 </div>
-                <div className='position-absolute' style={{zIndex:40, right:'-14%', top:'22%'}}>
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>
+                <div className='position-absolute' style={{zIndex:40, right:-20, top:100}}>
+                  {timeToChange?<Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>:<Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
+                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9}/>}
                </div>
                 <div style={{minHeight:'100%'}}>
                   <Image className='img-responsive' src={Iphone} alt="iphone" objectFit='cover' />
@@ -197,7 +200,7 @@ export default function Home() {
                   </MiniCard>
                 </div>
                 <div className="miniCards">
-                  <MiniCard title={'Notifications and reminders'} body={'Only speak to financially committed potential clients'} iconColor={'#FD52AB'}>
+                  <MiniCard title={'Notifications and reminders'} body={'Get alerts for new activities on your profile and reminders for project milestones.'} iconColor={'#FD52AB'}>
                       <Notification set='bold' primaryColor='white' secondaryColor='white'/>
                   </MiniCard>
                   <MiniCard title={'Secure transactions'} body={'Set, track and complete project objectives easily'} iconColor={'#8C3AAA'}>
@@ -220,10 +223,12 @@ export default function Home() {
       <div className="container mt-5">
         <div className="row">
           <div className="col">
+          <div className="d-flex flex-column justify-content-center" style={{height:'100%'}}>
             <h2 className='headings'>An Ecosystem of the business of Social Media</h2>
           </div>
+          </div>
           <div className="col">
-
+            {/* <video src={"/gigsCvid.mp4"} autoPlay muted style={{ width: "80%", height:"100%", outline:'none' }} loop/> */}
           </div>
         </div>
       </div>
