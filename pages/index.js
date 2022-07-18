@@ -14,8 +14,6 @@ import CoolGirl from './../src/assets/coolgirl.png'
 import Tunde from './../src/assets/tunde.png'
 import Richard from './../src/assets/richard.jpg'
 import MiniCard from '../src/components/MiniCard'
-import { faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Message from '../src/components/Message'
 import InitialsMessage from '../src/components/InitialsMessage'
 import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'react-iconly'
