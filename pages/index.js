@@ -18,7 +18,7 @@ import { faSquareH, faPlayCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Message from '../src/components/Message'
 import InitialsMessage from '../src/components/InitialsMessage'
-import { Calendar, Lock, People, EditSquare, Filter2, Notification, Play, InfoSquare, TickSquare} from 'react-iconly'
+import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'react-iconly'
 
 export default function Home() {
 
@@ -225,7 +225,7 @@ export default function Home() {
                     <People set='bold' primaryColor='white' secondaryColor='white'/>
                   </MiniCard>
                   <MiniCard title={'Scheduling and booking'} body={'Publish or restrict your availability, only get booked at your own pace'} iconColor={'#38C069'}>
-                    <TickSquare set='bold' primaryColor='white' secondaryColor='white'/>
+                    <Category set='bold' primaryColor='white' secondaryColor='white'/>
                   </MiniCard>
                 </div>
               </div>
