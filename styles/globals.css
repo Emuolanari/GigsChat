@@ -13,6 +13,7 @@ body {
 
 .responsiveBtn{
   min-height: 50px;
+  min-width: 200px;
   border-radius: 7px;
   border: none;
   border-radius: 7px;
