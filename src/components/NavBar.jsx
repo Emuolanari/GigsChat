@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav, NavLink } from "react-bootstrap";
 import WaitingListBtn from './WaitingListBtn';
-import LOGO from './../assets/logo.svg'
 import Logo from './Logo';
 
 
@@ -9,9 +8,9 @@ export default function NavBar(){
     return(
         <Navbar bg="white" expand="lg">
             <Container>
-                <Navbar.Brand as={Link} href="/">
-                 <Logo fill={'#001817'}/>
-                </Navbar.Brand>
+                <Link href="/">
+                    <Navbar.Brand><Logo fill={'#001817'}/></Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className='d-flex justify-content-around' style={{minWidth:'100%'}}>
