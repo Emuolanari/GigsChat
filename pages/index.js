@@ -240,6 +240,11 @@ export default function Home() {
           </div>
           <div className="col">
             {/* <video src={"/gigsCvid.mp4"} autoPlay muted style={{ width: "80%", height:"100%", outline:'none' }} loop/> */}
+            <div className="position-relative d-flex justify-content-center align-items-center" style={{minHeight:200, minWidth:200, height:600, width:600}}>
+              <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%'}}/>
+              <div className='rounded-circle position-absolute' style={{ zIndex:1,backgroundColor:'#E1F7F5', height:'60%', width:'60%'}}/>
+              <div className='rounded-circle position-absolute' style={{ zIndex:2,backgroundColor:'#fff', height:'40%', width:'40%'}}/>
+            </div>
           </div>
         </div>
       </div>
