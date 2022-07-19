@@ -64,9 +64,12 @@ input[type="text"] {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 } 
-/* .headings{
-  font-size: 3.5rem;
-} */
+
+input[type="text"]:focus {
+  outline: none !important;
+  border-color: #0BC5B9;
+  box-shadow: 0 0 10px #0BC5B9;
+}
 
 .vertical-center {
   min-height: 600px;
