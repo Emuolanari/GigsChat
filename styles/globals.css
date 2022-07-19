@@ -13,7 +13,6 @@ body {
 
 .responsiveBtn{
   min-height: 50px;
-  min-width: 220px;
   border-radius: 7px;
   border: none;
   border-radius: 7px;
@@ -54,13 +53,13 @@ h2{
 
 input[type="text"]::placeholder {                
   /* Firefox, Chrome, Opera */ 
-  padding-left: 8%;
   padding-right: auto; 
   font-family: 'Raleway';
 } 
 input[type="text"] {                
   /* Firefox, Chrome, Opera */ 
   max-width: 300px;
+  padding-left: 4%;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 } 
@@ -177,8 +176,9 @@ input[type="text"]:focus {
     font-size: 9px;
   }
   .responsiveBtn{
-    min-height: 60px;
+    min-height: 50px;
     min-width: 50px;
+    font-size: 10px;
   }
 
   h1 {
@@ -218,6 +218,13 @@ input[type="text"]:focus {
     justify-content: center;
     flex-direction: column;
   }
+
+  input[type="text"] {                
+    /* Firefox, Chrome, Opera */ 
+    width: 55%;
+    height: 50px;
+    font-size: 10px;
+  } 
 }
 
 
