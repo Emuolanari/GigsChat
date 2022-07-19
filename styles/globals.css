@@ -100,8 +100,6 @@ input[type="text"]:focus {
 }
 
 .circlesSize{
-  min-height:200px;
-  min-width:200px;
   height:600px;
   width:600px;
 }
@@ -157,8 +155,8 @@ input[type="text"]:focus {
   }
 
   .circlesSize{
-    height:200px;
-    width:200px;
+    height:250px;
+    width:250px;
   }
   
   .ovalBackground {
