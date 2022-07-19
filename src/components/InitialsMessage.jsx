@@ -18,7 +18,7 @@ const InitialsMessage = ({message, initials, color, position}) => {
         </div>
 
         {position=='right' &&
-        <div className="position-relative d-flex justify-content-center align-items-center">
+        <div className="position-relative d-flex justify-content-center align-items-center me-3">
             <div className="d-flex justify-content-center position-absolute align-items-center respInitialsM"
                 style={{ borderRadius:'50%', backgroundColor:color, height:30, width:30 }}>
                 <span className="text-white" style={{fontFamily:'Raleway', fontWeight:400}}>{initials}</span>
