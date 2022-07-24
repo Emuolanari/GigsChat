@@ -13,6 +13,7 @@ config.autoAddCss = false
 export const FormContext = createContext();
 function MyApp({ Component, pageProps }) {
   const [isFormVisible, setIsFormVisible] = useState(false)
+  const [email, setEmail] = useState(false)
   NProgress.configure({showSpinner: false})
   useEffect(() => {
     const handleRouteStart = () => NProgress.start();
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className='d-flex flex-column justify-content-between vh-100'>
-        <FormContext.Provider value={{isFormVisible, setIsFormVisible}}>
+        <FormContext.Provider value={{isFormVisible, setIsFormVisible, email, setEmail}}>
         <NavBar />
         <Component {...pageProps} />
         <Footer/>

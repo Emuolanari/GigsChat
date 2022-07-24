@@ -7,9 +7,9 @@ import { FormContext } from '../../pages/_app';
 // import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function FormModal() {
-  const {isFormVisible, setIsFormVisible} = useContext(FormContext); 
+  const {isFormVisible, setIsFormVisible, email} = useContext(FormContext); 
   const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  const [updatedEmail, setUpdatedEmail] = useState(email)
   const [intendedUse, setIntendedUse] = useState('')
   const [socialHandle, setSocialHandle] = useState('')
   const [error, setError] = useState('')
@@ -19,7 +19,7 @@ export default function FormModal() {
     setError('')
     setSuccess('')
     if (!name) {setError('Please enter your name'); return}
-    if (!email) {setError('Please enter your email'); return}
+    if (!updatedEmail) {setError('Please enter your email'); return}
     if (!intendedUse) {setError('Please select inteded use'); return}
     else{
       try{
@@ -41,8 +41,7 @@ export default function FormModal() {
               
           })
           const data = await res.json()
-        //   console.log('res',res)
-        //   console.log('data',data)
+          
           if (res.status==200) {setSuccess("Successfully joined waitlist!")}
           else{setError(data.errors[0].message); return}
   
@@ -71,7 +70,7 @@ export default function FormModal() {
         </div>
         <div className="mb-5">
         {/* <FontAwesomeIcon className="p-2 position-absolute" icon={faEnvelope}/> */}
-          <input type="email" className="form-control input-lg" id='form-email' onChange={(e)=>setEmail(e.target.value)} required/>
+          <input type="email" value={updatedEmail} className="form-control input-lg" id='form-email' onChange={(e)=>setUpdatedEmail(e.target.value)} required/>
           <label data-error="wrong" data-success="right" htmlFor="form-email">Your email</label>
         </div>
         <div className="mb-5">

@@ -21,7 +21,7 @@ import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'r
 import { FormContext } from './_app'
 
 export default function Home() {
-  const {isFormVisible, setIsFormVisible} = useContext(FormContext); 
+  const {isFormVisible, email, setEmail} = useContext(FormContext); 
   console.log('isFormVisible',isFormVisible);
   const [timeToChange, setTimeToChange] = useState(2);
 
@@ -47,7 +47,7 @@ export default function Home() {
                 secure payments,
                 conversations and dispute management</p>
               <div style={{display:'flex'}} id='inputCol'><input className='customInput' style={{ border: '1px solid #EEEEEE'}} type="text"
-                  placeholder='Enter email address' />
+                  placeholder='Enter email address' onChange={(e)=>{console.log('rr',e.target.value);setEmail(e.target.value)}}/>
                 <WaitingListBtn passedColor={'#0bc5b9'} />
               </div>
             </div>
