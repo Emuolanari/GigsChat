@@ -15,7 +15,8 @@ export default function FormModal() {
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
 
-  const handleSubmit = async ()=>{
+  const handleSubmit = async (e)=>{
+    e.preventDefault();
     setError('')
     setSuccess('')
     if (!name) {setError('Please enter your name'); return}
