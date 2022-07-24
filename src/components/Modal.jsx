@@ -21,6 +21,7 @@ export default function FormModal() {
     if (!intendedUse) {setError('Please select inteded use'); return}
     else{
       try{
+        //best to put in an environment variable
           const res = await fetch(`https://idjyr75h.directus.app/items/waitlist`,{
               method:"POST",
               headers:{
@@ -40,7 +41,7 @@ export default function FormModal() {
           const data = await res.json()
         //   console.log('res',res)
         //   console.log('data',data)
-          if (res.status==200) {setSuccess("Successfully registered!")}
+          if (res.status==200) {setSuccess("Successfully joined waitlist!")}
           else{setError(data.errors[0].message); return}
   
           return data;
