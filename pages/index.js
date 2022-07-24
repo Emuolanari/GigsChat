@@ -6,7 +6,7 @@ import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
 import WomanOnMobile from './../src/assets/womanonmobile.png'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import Iphone from './../src/assets/iphone.svg'
 import Aisha from './../src/assets/aisha.png'
@@ -17,9 +17,10 @@ import MiniCard from '../src/components/MiniCard'
 import Message from '../src/components/Message'
 import InitialsMessage from '../src/components/InitialsMessage'
 import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'react-iconly'
+import { FormContext } from './_app'
 
 export default function Home() {
-
+  const {isFormVisible, setIsFormVisible} = useContext(FormContext); 
   const [timeToChange, setTimeToChange] = useState(2);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function Home() {
 
   return (
     <div className=' mt-5'>
+      {isFormVisible}
       <div className='container'>
         <div className='row'>
           <div className='col-md'>
