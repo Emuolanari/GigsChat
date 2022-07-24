@@ -17,8 +17,8 @@ export default function FormModal() {
 
   const handleSubmit = async ()=>{
     if (!name) {setError('Please enter your name'); return}
-    if (!email||!intendedUse) {setError('Please enter your email'); return}
-    if (!name||!email||!intendedUse) {setError('Please select inteded use'); return}
+    if (!email) {setError('Please enter your email'); return}
+    if (!intendedUse) {setError('Please select inteded use'); return}
     else{
       try{
           const res = await fetch(`https://idjyr75h.directus.app/items/waitlist`,{
