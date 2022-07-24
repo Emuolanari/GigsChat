@@ -17,26 +17,26 @@ export default function FormModal() {
       <Modal.Body>
         <div className="mb-5">
         {/* <FontAwesomeIcon className="p-2 position-absolute" icon={faPerson}/> */}
-          <input type="text" className="form-control input-lg"/>
-          <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your Name</label>
+          <input type="text" className="form-control" id='form-name'/>
+          <label data-error="wrong" data-success="right" htmlFor="form-name">Your Name</label>
         </div>
         <div className="mb-5">
         {/* <FontAwesomeIcon className="p-2 position-absolute" icon={faEnvelope}/> */}
-          <input type="email" className="form-control input-lg"/>
-          <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your email</label>
+          <input type="email" className="form-control input-lg" id='form-email'/>
+          <label data-error="wrong" data-success="right" htmlFor="form-email">Your email</label>
         </div>
         <div className="mb-5">
-          <select className="form-select">
+          <select className="form-select" id='form-select'>
             {/* <option selected>Open this select menu</option> */}
             <option selected value="Client">Client</option>
             <option value="Creator">Creator</option>
           </select>
-          <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Intended Use</label>
+          <label data-error="wrong" data-success="right" htmlFor="form-select">Intended Use</label>
         </div>
         <div className="mb-5">
         {/* <FontAwesomeIcon className="p-2 position-absolute" icon={faInstagram}/> */}
-          <input type="text" className="form-control input-lg"/>
-          <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your Social Media @</label>
+          <input type="text" className="form-control input-lg" id="form-socials"/>
+          <label data-error="wrong" data-success="right" htmlFor="form-socials">Your Social Media @</label>
         </div>
       </Modal.Body>
 

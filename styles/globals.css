@@ -52,12 +52,12 @@ h2{
   font-weight: 600 !important;
 }
 
-input[type="text"]::placeholder {                
+.customInput::placeholder {                
   /* Firefox, Chrome, Opera */ 
   padding-right: auto; 
   font-family: 'Raleway';
 } 
-input[type="text"] {                
+.customInput {                
   /* Firefox, Chrome, Opera */ 
   max-width: 300px;
   padding-left: 4%;
@@ -65,10 +65,10 @@ input[type="text"] {
   border-top-left-radius: 5px;
 } 
 
-input[type="text"]:focus {
+input:focus {
   outline: none !important;
-  border-color: #0BC5B9;
-  box-shadow: 0 0 10px #0BC5B9;
+  border-color: #0BC5B9 !important;
+  box-shadow: 0 0 10px #0BC5B9 !important;
 }
 
 .vertical-center {

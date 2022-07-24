@@ -10,7 +10,7 @@ export default function Footer() {
         <section className='mt-5 d-flex flex-column justify-content-center' style={{backgroundColor:'#0BC5B9',backgroundImage: `url(${FooterBG.src})`, backgroundRepeat: 'no-repeat',backgroundSize: '100%', minHeight:400}}>
             <h1 className='pt-5 mb-5' style={{fontFamily: 'Raleway'}}>You can join the waitlist</h1>
             <div className='justify-content-center mx-4 pb-5' style={{display:'flex'}}>
-                <input className='border-0' type="text" placeholder='Enter email address' />
+                <input className='border-0 customInput' type="text" placeholder='Enter email address' />
                 <WaitingListBtn passedColor={'#000'} />
             </div>
         </section>
