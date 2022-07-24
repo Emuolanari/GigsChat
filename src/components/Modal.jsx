@@ -9,7 +9,7 @@ import { FormContext } from '../../pages/_app';
 export default function FormModal() {
   const {isFormVisible, setIsFormVisible, email} = useContext(FormContext); 
   const [name, setName] = useState('')
-  const [updatedEmail, setUpdatedEmail] = useState(email)
+  const [updatedEmail, setUpdatedEmail] = useState(email||'') 
   const [intendedUse, setIntendedUse] = useState('')
   const [socialHandle, setSocialHandle] = useState('')
   const [error, setError] = useState('')

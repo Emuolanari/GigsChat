@@ -71,6 +71,12 @@ input:focus {
   box-shadow: 0 0 10px #0BC5B9 !important;
 }
 
+select:focus {
+  outline: none !important;
+  border-color: #0BC5B9 !important;
+  box-shadow: 0 0 10px #0BC5B9 !important;
+}
+
 .vertical-center {
   min-height: 600px;
 
