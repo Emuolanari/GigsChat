@@ -16,10 +16,10 @@ export default function FormModal() {
           <input type="text" className="form-control validate"/>
           <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your Name</label>
         </div>
-        {/* <div className="md-form mb-5">
+        <div className="md-form mb-5">
           <input type="email" className="form-control validate"/>
           <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your email</label>
-        </div> */}
+        </div>
         <div className="md-form mb-5">
           <select className="form-select">
             {/* <option selected>Open this select menu</option> */}
