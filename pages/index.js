@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Card from '../src/components/Card'
 import WaitingListBtn from '../src/components/WaitingListBtn'
+import FormModal from '../src/components/Modal'
 import GroupGirl from './../src/assets/GroupGirl.png'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
@@ -21,6 +22,7 @@ import { FormContext } from './_app'
 
 export default function Home() {
   const {isFormVisible, setIsFormVisible} = useContext(FormContext); 
+  console.log('isFormVisible',isFormVisible);
   const [timeToChange, setTimeToChange] = useState(2);
 
   useEffect(() => {
@@ -33,7 +35,8 @@ export default function Home() {
 
   return (
     <div className=' mt-5'>
-      {isFormVisible}
+      
+      {isFormVisible &&  <FormModal/>}
       <div className='container'>
         <div className='row'>
           <div className='col-md'>
