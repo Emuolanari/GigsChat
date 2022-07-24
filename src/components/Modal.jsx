@@ -33,7 +33,7 @@ export default function FormModal() {
               body: JSON.stringify(
                   {
                       "Name": name,
-                      "email_address": email,
+                      "email_address": updatedEmail,
                       "Intended_Use": intendedUse,
                       "Social_Media_Handle": socialHandle
     
