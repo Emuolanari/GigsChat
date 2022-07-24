@@ -218,7 +218,7 @@ input:focus {
     flex-direction: column;
   }
 
-  input[type="text"] {                
+  .customInput {                
     /* Firefox, Chrome, Opera */ 
     width: 55%;
     height: 50px;
@@ -230,7 +230,7 @@ input:focus {
 
 @media only screen and (min-width: 1000px) {
 
-  input[type="text"] {                
+  .customInput {                
     /* Firefox, Chrome, Opera */ 
     min-width: 300px;
   } 
