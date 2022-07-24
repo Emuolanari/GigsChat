@@ -29,10 +29,10 @@ export default function FormModal() {
               },
               body: JSON.stringify(
                   {
-                      "first_name": name,
-                      "email": email,
-                      "intendedUse": intendedUse,
-                      "socialHandle": socialHandle
+                      "Name": name,
+                      "email_address": email,
+                      "Intended_Use": intendedUse,
+                      "Social_Media_Handle": socialHandle
     
                   }
               )
@@ -73,8 +73,8 @@ export default function FormModal() {
           <label data-error="wrong" data-success="right" htmlFor="form-email">Your email</label>
         </div>
         <div className="mb-5">
-          <select className="form-select" id='form-select' defaultValue={'Client'} onChange={(e)=>setIntendedUse(e.target.value)} required>
-            {/* <option selected>Open this select menu</option> */}
+          <select className="form-select" id='form-select' onChange={(e)=>setIntendedUse(e.target.value)}>
+            <option selected>Open this select menu</option>
             <option value="Client">Client</option>
             <option value="Creator">Creator</option>
           </select>
