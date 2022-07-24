@@ -201,7 +201,7 @@ export default function Home() {
             <h2 className='headings'>An Ecosystem of the business of Social Media</h2>
           </div>
           </div>
-          <div className="col">
+          <div className="col d-flex justify-content-center">
             {/* <video src={"/gigsCvid.mp4"} autoPlay muted style={{ width: "80%", height:"100%", outline:'none' }} loop/> */}
             <div className="position-relative d-flex justify-content-center align-items-center circlesSize">
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%'}}/>
