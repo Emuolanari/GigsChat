@@ -16,6 +16,8 @@ export default function FormModal() {
   const [success, setSuccess] = useState('')
 
   const handleSubmit = async ()=>{
+    setError('')
+    setSuccess('')
     if (!name) {setError('Please enter your name'); return}
     if (!email) {setError('Please enter your email'); return}
     if (!intendedUse) {setError('Please select inteded use'); return}
@@ -73,8 +75,8 @@ export default function FormModal() {
           <label data-error="wrong" data-success="right" htmlFor="form-email">Your email</label>
         </div>
         <div className="mb-5">
-          <select className="form-select" id='form-select' onChange={(e)=>setIntendedUse(e.target.value)}>
-            <option selected>Open this select menu</option>
+          <select className="form-select" id='form-select' onChange={(e)=>setIntendedUse(e.target.value)} required>
+            <option selected>Select Intented Use</option>
             <option value="Client">Client</option>
             <option value="Creator">Creator</option>
           </select>
