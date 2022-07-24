@@ -22,7 +22,7 @@ export default function FormModal() {
     else{
       try{
         //best to put in an environment variable
-          const res = await fetch(`https://idjyr75h.directus.app/items/waitlist`,{
+          const res = await fetch(`https://idjyr75h.directus.app/items/Waitlist`,{
               method:"POST",
               headers:{
                   'Content-Type': 'application/json'
