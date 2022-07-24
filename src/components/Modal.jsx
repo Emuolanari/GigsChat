@@ -12,6 +12,7 @@ export default function FormModal() {
   const [email, setEmail] = useState('')
   const [intendedUse, setIntendedUse] = useState('')
   const [socialHandle, setSocialHandle] = useState('')
+  const [error, setError] = useState('')
 
   const handleSubmit = () => {
     console.log('intendedUse', intendedUse);
@@ -23,6 +24,7 @@ export default function FormModal() {
       </Modal.Header>
 
       <Modal.Body>
+      <div className="mb-5 text-danger">{error && error}</div>
         <div className="mb-5">
         {/* <FontAwesomeIcon className="p-2 position-absolute" icon={faPerson}/> */}
           <input type="text" className="form-control" id='form-name' onChange={(e)=>setName(e.target.value)} required/>
