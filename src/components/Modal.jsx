@@ -2,6 +2,9 @@ import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { FormContext } from '../../pages/_app';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPerson, faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function FormModal() {
     const {isFormVisible, setIsFormVisible} = useContext(FormContext); 
@@ -12,15 +15,17 @@ export default function FormModal() {
       </Modal.Header>
 
       <Modal.Body>
-        <div className="md-form mb-5">
-          <input type="text" className="form-control validate"/>
+        <div className="mb-5">
+        <FontAwesomeIcon className="p-2 position-absolute" icon={faPerson}/>
+          <input type="text" className="form-control input-lg"/>
           <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your Name</label>
         </div>
-        <div className="md-form mb-5">
-          <input type="email" className="form-control validate"/>
+        <div className="mb-5">
+        <FontAwesomeIcon className="p-2 position-absolute" icon={faEnvelope}/>
+          <input type="email" className="form-control input-lg"/>
           <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your email</label>
         </div>
-        <div className="md-form mb-5">
+        <div className="mb-5">
           <select className="form-select">
             {/* <option selected>Open this select menu</option> */}
             <option selected value="Client">Client</option>
@@ -28,9 +33,9 @@ export default function FormModal() {
           </select>
           <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Intended Use</label>
         </div>
-        <div className="md-form mb-5">
-          <i className="fas fa-envelope prefix grey-text"></i>
-          <input type="text" className="form-control validate"/>
+        <div className="mb-5">
+        <FontAwesomeIcon className="p-2 position-absolute" icon={faInstagram}/>
+          <input type="text" className="form-control input-lg"/>
           <label data-error="wrong" data-success="right" htmlFor="orangeForm-email">Your Social Media @</label>
         </div>
       </Modal.Body>
