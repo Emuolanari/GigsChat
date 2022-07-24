@@ -99,7 +99,7 @@ export default function FormModal() {
 
         <Modal.Footer>
           <Button variant="secondary" onClick={()=>setIsFormVisible(false)}>Close</Button>
-          <Button style={{backgroundColor:'#0bc5b9'}} type='submit'>Submit</Button>
+          <Button style={{backgroundColor:'#0bc5b9', border:'none'}} type='submit'>Submit</Button>
         </Modal.Footer>
       </form>
     </Modal>
