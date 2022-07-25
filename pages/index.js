@@ -20,10 +20,11 @@ import InitialsMessage from '../src/components/InitialsMessage'
 import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'react-iconly'
 import { FormContext } from './_app'
 import FirstAnimation from '../src/components/FirstAnimation'
+import SecondAnimation from '../src/components/SecondAnimation'
 
 export default function Home() {
   const {isFormVisible, email, setEmail} = useContext(FormContext); 
-  console.log('isFormVisible',isFormVisible);
+  // console.log('isFormVisible',isFormVisible);
 
   return (
     <div className=' mt-5'>
@@ -67,6 +68,7 @@ export default function Home() {
         <div className='container'>
           <div id='demo' className='row justify-content-center text-center' style={{paddingLeft:0, paddingRight:0 }}>
             <h2 className='pb-4 pt-4' >Watch demo video</h2>
+            {/* should be an actual video when ready */}
             <div className='position-relative d-flex justify-content-center px-0' style={{minWidth: 200, width:600, minHeight: '90%'}}>
               <div className='position-absolute d-flex align-items-center' style={{backgroundColor:'rgba(58,61,68, 0.8)', justifyContent:'center', height:80, width:'100%', zIndex:20, bottom:0}}>
               <Play set='bulk' primaryColor='white' secondaryColor='#0BC5B9' size='xlarge'/>
@@ -112,41 +114,7 @@ export default function Home() {
         <div className="row">
           <div className="col">
             <h2 className='headings text-center'>Built for convenience and allows you focus on what really matters</h2>
-
-            <div className="d-flex justify-content-center">
-              <div className="position-relative d-flex justify-content-center text-white" style={{width:'50%'}}>
-                {/* <div className='position-absolute' style={{zIndex:40, left:-46, bottom:170}}>
-                  {timeToChange?
-                  <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}
-                    color={'#FFAC0E'} maxW={250} padding={9} />:
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />}
-                </div>
-
-                {timeToChange?<div className='position-absolute' style={{zIndex:40, right:-20, top:100}}>
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />
-                </div>:
-                (<>
-                <div className='position-absolute' style={{zIndex:40, right:-20, top:100}}>
-                  <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
-                    imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />
-                </div>
-                <div className='position-absolute' style={{zIndex:1, right:10, top:100}}>
-                <Message name='Jenny Wilson' message='No more messages from unserious clients' 
-                    color={'#FFAC0E'} maxW={250} padding={9} />
-                </div>
-                </>
-                )
-                } */}
-                <div style={{minHeight:'100%'}}>
-                  <Image className='img-responsive' src={Iphone} alt="iphone" objectFit='cover' />
-                </div>
-              </div>
-
-
-            </div>
-
+            <SecondAnimation/>
           </div>
         </div>
       </div>
