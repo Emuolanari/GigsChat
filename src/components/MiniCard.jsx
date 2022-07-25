@@ -6,7 +6,7 @@ export default function MiniCard({title, body, iconColor, children}) {
         style={{borderRadius:5, height:35, width:35, backgroundColor:`${iconColor}`, position:'absolute', padding:2, top:-15, bottom:0, zIndex:200}}>
         {children}
       </div>
-      <div className="card-body text-center">
+      <div className="card-body">
         <div className='bg-info.bg-gradient'>
           <p className='card-title' style={{fontFamily:'Raleway', fontWeight:600}}>{title}</p>
         </div>
