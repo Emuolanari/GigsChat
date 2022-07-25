@@ -4,8 +4,12 @@ import Message from "./Message"
 import CoolGirl from './../assets/coolgirl.png'
 import Richard from './../assets/richard.jpg'
 import Iphone from './../assets/iphone.svg'
+import Iphone2 from './../assets/iphone2.svg'
 
 function SecondAnimation() {
+    //check https://www.npmjs.com/package/react-spring for animating cards
+    //https://www.youtube.com/watch?v=kT6yYSwK1oA&ab_channel=BiteSizeAcademy
+
     const [timeToChange, setTimeToChange] = useState(2);
     useEffect(() => {
         const interval = setInterval(() => setTimeToChange(!timeToChange), 1500)
@@ -43,7 +47,7 @@ function SecondAnimation() {
             </>
             )
             }
-            <Image className='img-responsive' src={Iphone} alt="iphone" objectFit='contain' />
+            {timeToChange?<Image className='img-responsive' src={Iphone2} alt="iphone" objectFit='contain' />:<Image className='img-responsive' src={Iphone} alt="iphone" objectFit='contain' />}
         </div>
 
 
