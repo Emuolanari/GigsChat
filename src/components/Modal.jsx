@@ -80,8 +80,8 @@ export default function FormModal() {
             <label data-error="wrong" data-success="right" htmlFor="form-email">Your email</label>
           </div>
           <div className="mb-5">
-            <select className="form-select" id='form-select' onChange={(e)=>setIntendedUse(e.target.value)} required>
-              <option selected>Select Intented Use</option>
+            <select className="form-select" id='form-select' value={intendedUse} onChange={(e)=>setIntendedUse(e.target.value)} required>
+              <option value="" disabled>Select Intented Use</option>
               <option value="Client">Client</option>
               <option value="Creator">Creator</option>
             </select>
