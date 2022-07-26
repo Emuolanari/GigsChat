@@ -12,7 +12,7 @@ function SecondAnimation() {
     const [timeToChange, setTimeToChange] = useState(2);
     const transition = useTransition(timeToChange, {
         from:{x:0,y:-0, opacity:0}, //right, top
-        enter:{x:300,y:-330, opacity:1},//left, bottom
+        enter:{x:340,y:-330, opacity:1},//left, bottom
         leave:{x:0,y:0, opacity:0}
     })
     useEffect(() => {
