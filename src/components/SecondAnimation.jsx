@@ -9,10 +9,10 @@ import { useTransition, animated } from "@react-spring/web";
 
 function SecondAnimation() {
     
-    const [timeToChange, setTimeToChange] = useState(2);
+    const [timeToChange, setTimeToChange] = useState(false);
     const transition = useTransition(timeToChange, {
-        from:{x:0,y:-0, opacity:0}, //right, top
-        enter:{x:340,y:-330, opacity:1},//left, bottom
+        from:{x:0,y:0, opacity:0}, 
+        enter:{x:340,y:-330, opacity:1},
         leave:{x:0,y:0, opacity:0}
     })
     useEffect(() => {
@@ -48,11 +48,6 @@ function SecondAnimation() {
                         message='All my project milestones were easy to set track and review' imgSrc={Richard}
                         color={'#0BC5B9'} maxW={250} padding={9} />
                 </div>
-
-                {/* <div className='position-absolute' style={{zIndex:1, right:-110, top:150}}>
-                    <Message name='Jenny Wilson' message='No more messages from unserious clients' color={'#FFAC0E'}
-                        maxW={250} padding={9} />
-                </div> */}
             </>
             )
             }

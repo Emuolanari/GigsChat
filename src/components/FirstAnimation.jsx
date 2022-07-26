@@ -4,7 +4,7 @@ import InitialsMessage from "./InitialsMessage";
 import WomanOnMobile2 from './../assets/womanonmobile2.png'
 import WomanOnMobile from './../assets/womanonmobile.png'
 export default function FirstAnimation() {
-    const [timeToChange, setTimeToChange] = useState(2);
+    const [timeToChange, setTimeToChange] = useState(false);
 
     useEffect(() => {
       const interval = setInterval(() => setTimeToChange(!timeToChange), 1500)
