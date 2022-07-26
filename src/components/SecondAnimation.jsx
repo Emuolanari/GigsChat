@@ -11,9 +11,9 @@ function SecondAnimation() {
     
     const [timeToChange, setTimeToChange] = useState(2);
     const transition = useTransition(timeToChange, {
-        from:{right:-190,y:150, opacity:0}, //right, top
-        enter:{x:120,bottom:170, opacity:1},//left, bottom
-        leave:{left:120,bottom:170, opacity:0}
+        from:{x:0,y:-0, opacity:0}, //right, top
+        enter:{x:300,y:-330, opacity:1},//left, bottom
+        leave:{x:0,y:0, opacity:0}
     })
     useEffect(() => {
         const interval = setInterval(() => setTimeToChange(!timeToChange), 1500)
@@ -26,7 +26,7 @@ function SecondAnimation() {
   return (
     <div className="d-flex justify-content-center text-white">
         <div style={{maxWidth:'100%',maxHeight:'100%', height: 'auto', position:'relative'}}>
-            <div className="position-absolute hiddenMessage" style={{zIndex:10}}>{transition((style, item)=>item?'':<animated.div style={style}>
+            <div className="position-absolute hiddenMessage" style={{zIndex:2, left:-120, bottom:170}}>{transition((style, item)=>item?'':<animated.div style={style}>
                 <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}
                     color={'#FFAC0E'} maxW={250} padding={9} />
             </animated.div>)}</div>
