@@ -42,19 +42,10 @@ function SecondAnimation() {
                     imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />}
         
             </div>
-            {timeToChange?<div className='position-absolute hiddenMessage' style={{zIndex:4, right:-130, top:150}}>
+           <div className='position-absolute hiddenMessage' style={{zIndex:4, right:-130, top:150}}>
                 <Message name='Richard Tokunbo' message='All my project milestones were easy to set track and review'
                     imgSrc={Richard} color={'#0BC5B9'} maxW={250} padding={9} />
-            </div>:
-            (<>
-                <div className='position-absolute hiddenMessage' style={{zIndex:40, right:-130, top:150}}>
-                    <Message name='Richard Tokunbo'
-                        message='All my project milestones were easy to set track and review' imgSrc={Richard}
-                        color={'#0BC5B9'} maxW={250} padding={9} />
-                </div>
-            </>
-            )
-            }
+            </div>
             {timeToChange?<Image className='img-responsive' src={Iphone2} alt="iphone" objectFit='contain' />:<Image className='img-responsive' src={Iphone} alt="iphone" objectFit='contain' />}
         </div>
 
