@@ -7,6 +7,10 @@ import Iphone from './../assets/iphone.svg'
 import Iphone2 from './../assets/iphone2.svg'
 import { useTransition, animated } from "@react-spring/web";
 
+// TODO
+//{make proper use of the animation library}
+// {stop page jumping up and down as animation happens when scrolling and iphone at top of window}
+
 function SecondAnimation() {
     
     const [timeToChange, setTimeToChange] = useState(false);
