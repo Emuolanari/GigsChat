@@ -161,6 +161,10 @@ select:focus {
     font-size:9px;
   }
 
+  .hiddenMessage {
+    display: none;
+  }
+
   .circlesSize{
     height:280px;
     width:280px;
