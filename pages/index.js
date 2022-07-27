@@ -21,6 +21,7 @@ import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'r
 import { FormContext } from './_app'
 import FirstAnimation from '../src/components/FirstAnimation'
 import SecondAnimation from '../src/components/SecondAnimation'
+import Head from 'next/head'
 
 export default function Home() {
   const {isFormVisible, email, setEmail} = useContext(FormContext); 
@@ -28,6 +29,9 @@ export default function Home() {
 
   return (
     <div className=' mt-5'>
+      <Head>
+        <title>Gigschat</title>
+      </Head>
       
       {isFormVisible &&  <FormModal/>}
       <div className='container'>
