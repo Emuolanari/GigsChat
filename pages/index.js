@@ -31,7 +31,6 @@ export default function Home() {
     <div className=' mt-5'>
       <Head>
         <title>Gigschat</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       
       {isFormVisible &&  <FormModal/>}
