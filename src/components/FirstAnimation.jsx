@@ -4,6 +4,7 @@ import InitialsMessage from "./InitialsMessage";
 import WomanOnMobile2 from './../assets/womanonmobile2.png'
 import WomanOnMobile from './../assets/womanonmobile.png'
 export default function FirstAnimation() {
+  //can create custom hook if time since used for all three animations
     const [timeToChange, setTimeToChange] = useState(false);
 
     useEffect(() => {

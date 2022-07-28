@@ -7,6 +7,7 @@ import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
 import WomanOnMobile from './../src/assets/womanonmobile.png'
+import GIcon from './../src/assets/Gigschaticon.svg'
 import { useContext, useEffect, useState } from 'react'
 import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
 import Iphone from './../src/assets/iphone.svg'
@@ -22,10 +23,10 @@ import { FormContext } from './_app'
 import FirstAnimation from '../src/components/FirstAnimation'
 import SecondAnimation from '../src/components/SecondAnimation'
 import Head from 'next/head'
+import ThirdAnimation from '../src/components/ThirdAnimation'
 
 export default function Home() {
   const {isFormVisible, email, setEmail} = useContext(FormContext); 
-  // console.log('isFormVisible',isFormVisible);
 
   return (
     <div className=' mt-5'>
@@ -33,7 +34,7 @@ export default function Home() {
         <title>Gigschat</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      
+
       {isFormVisible &&  <FormModal/>}
       <div className='container'>
         <div className='row'>
@@ -180,6 +181,10 @@ export default function Home() {
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%'}}/>
               <div className='rounded-circle position-absolute' style={{ zIndex:1,backgroundColor:'#E1F7F5', height:'60%', width:'60%'}}/>
               <div className='rounded-circle position-absolute' style={{ zIndex:2,backgroundColor:'#fff', height:'40%', width:'40%'}}/>
+              <ThirdAnimation/>
+              <div className='rounded-circle position-absolute' style={{ zIndex:4,backgroundColor:'#52DA81', height:'2%', width:'2%', bottom:'43%', right:'41%'}}/>
+              
+              <Image src={GIcon} alt='gigschat icon' style={{zIndex:5}}/>
             </div>
           </div>
         </div>
