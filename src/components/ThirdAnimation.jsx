@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function ThirdAnimation() {
     const [timeToChange, setTimeToChange] = useState(false);
-    const iconBackgroundColors = ['#52DA81', '#0BC5B9', '#6952FD', '#FD52AB', '#FFA500'];
+    const iconBackgroundColors = ['#609BB5', '#0BC5B9', '#6952FD', '#FD52AB', '#FFA500'];
     const [currentColorIndex, setCurrentColorIndex] = useState(1)
 
     const changeColor = () => {
