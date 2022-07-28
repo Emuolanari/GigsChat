@@ -9,25 +9,18 @@ function ThirdAnimation() {
         if (currentColorIndex==iconBackgroundColors.length-1) {
             setCurrentColorIndex(0)
         }else{
-            console.log('currentColorIndex',currentColorIndex);
             setCurrentColorIndex(currentColorIndex+1)
         }
     }
 
     useEffect(() => {
         // console.log('iconBackgroundColors.length-1', iconBackgroundColors.length-1);
-      const interval = setInterval(() => setTimeToChange(!timeToChange), 1500)
+      const interval = setInterval(() => {setTimeToChange(!timeToChange);changeColor()}, 1500)
       return () => {
         clearInterval(interval);
       };
-    }, [timeToChange])
+    }, [timeToChange, currentColorIndex])
 
-    useEffect(() => {
-      const interval = setInterval(() => changeColor(), 1000)
-      return () => {
-        clearInterval(interval);
-      };
-    }, [currentColorIndex])
 
 
   return (
