@@ -177,7 +177,10 @@ export default function Home() {
           <div className="col d-flex justify-content-center">
             {/* <video src={"/gigsCvid.mp4"} autoPlay muted style={{ width: "80%", height:"100%", outline:'none' }} loop/> */}
             <div className="position-relative d-flex justify-content-center align-items-center circlesSize">
-              <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%'}}/>
+              <div className='rounded-circle position-absolute spin' style={{border:'2px solid #37D0C7', height:'80%', width:'80%',zIndex:30}}>
+              <Image src={Tunde} alt="thumbnail" className='img-thumbnail'
+                height={70} width={70} style={{borderRadius:'50%'}} objectFit='cover'/>
+              </div>
               <div className='rounded-circle position-absolute' style={{ zIndex:1,backgroundColor:'#E1F7F5', height:'60%', width:'60%'}}/>
               <div className='rounded-circle position-absolute' style={{ zIndex:2,backgroundColor:'#fff', height:'40%', width:'40%'}}/>
               <ThirdAnimation/>
