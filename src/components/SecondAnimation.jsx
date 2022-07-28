@@ -25,7 +25,7 @@ function SecondAnimation() {
         return () => {
           clearInterval(interval);
         };
-      }, [timeToChange])
+      })
 
   return (
     <div className="d-flex justify-content-center text-white">

@@ -14,12 +14,11 @@ function ThirdAnimation() {
     }
 
     useEffect(() => {
-        // console.log('iconBackgroundColors.length-1', iconBackgroundColors.length-1);
       const interval = setInterval(() => {setTimeToChange(!timeToChange);changeColor()}, 1500)
       return () => {
         clearInterval(interval);
       };
-    }, [timeToChange, currentColorIndex])
+    })
 
 
 

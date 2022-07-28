@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Card from '../src/components/Card'
 import WaitingListBtn from '../src/components/WaitingListBtn'
 import FormModal from '../src/components/Modal'
-import GroupGirl from './../src/assets/GroupGirl.png'
+import GroupGirl from './../src/assets/GroupGirl.svg'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.png'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
@@ -45,7 +45,7 @@ export default function Home() {
                 secure payments,
                 conversations and dispute management</p>
               <div style={{display:'flex'}} id='inputCol'><input className='customInput' style={{ border: '1px solid #EEEEEE'}} type="text"
-                  placeholder='Enter email address' onChange={(e)=>{console.log('rr',e.target.value);setEmail(e.target.value)}}/>
+                  placeholder='Enter email address' onChange={(e)=>{setEmail(e.target.value)}}/>
                 <WaitingListBtn passedColor={'#0bc5b9'} />
               </div>
             </div>

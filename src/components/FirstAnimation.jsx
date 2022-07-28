@@ -13,7 +13,7 @@ export default function FirstAnimation() {
       return () => {
         clearInterval(interval);
       };
-    }, [timeToChange])
+    })
   return (
     <div className="col-md-6 mb-5 mt-5 adjustedHeight" style={{minHeight:'500px'}}>
     {timeToChange&&<div className='d-flex justify-content-end'>
