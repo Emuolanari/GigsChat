@@ -120,7 +120,6 @@ select:focus {
 .customMovingImg1 {
   justify-self: center;
   align-self: center;
-  /* margin-left: 1%; */
   flex: 1;
 }
 
@@ -247,7 +246,7 @@ select:focus {
 
 }
 
-.spin {
+/* .spin {
   -webkit-animation: spin-right 20s linear infinite;
   animation: spin-right 20s linear infinite;
 }
@@ -271,4 +270,4 @@ select:focus {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */

@@ -10,18 +10,14 @@ import RotateWoman from './../src/assets/unrotate.svg'
 import RotateWoman2 from './../src/assets/unrotatei.svg'
 import RotateWoman3 from './../src/assets/unrotateii.svg'
 import RotateWoman4 from './../src/assets/unrotateiii.svg'
-// import WomanOnMobile from './../src/assets/womanonmobile.png'
 import GIcon from './../src/assets/Gigschaticon.svg'
-import { useContext, useEffect, useState } from 'react'
-// import WomanOnMobile2 from './../src/assets/womanonmobile2.png'
-// import Iphone from './../src/assets/iphone.svg'
+import { useContext } from 'react'
 import Aisha from './../src/assets/aisha.png'
 import CoolGirl from './../src/assets/coolgirl.png'
 import Tunde from './../src/assets/tunde.png'
 import Richard from './../src/assets/richard.jpg'
 import MiniCard from '../src/components/MiniCard'
 import Message from '../src/components/Message'
-// import InitialsMessage from '../src/components/InitialsMessage'
 import { Calendar, Lock, People, Filter2, Notification, Play, Category } from 'react-iconly'
 import { FormContext } from './_app'
 import FirstAnimation from '../src/components/FirstAnimation'
@@ -184,23 +180,23 @@ export default function Home() {
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%',zIndex:30}}>
                 <div className="postion-realtive" style={{height:'100%', width:'100%'}}>
                 <div style={{position:'absolute', left:'15%', top:'-13%'}}>
-                    <Image src={RotateWoman4} alt="thumbnail" className='img-thumbnail' height={130} width={130}
+                    <Image src={RotateWoman4} alt="thumbnail1" className='img-thumbnail' height={130} width={130}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
                   <div style={{position:'absolute', right:'-10%', bottom:'53%'}}>
-                    <Image src={RotateWoman2} alt="thumbnail" className='img-thumbnail' height={70} width={70}
+                    <Image src={RotateWoman2} alt="thumbnail2" className='img-thumbnail' height={70} width={70}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
                   <div style={{position:'absolute', left:'65%', bottom:'-10%'}}>
-                    <Image src={RotateWoman} alt="thumbnail" className='img-thumbnail' height={130} width={130}
+                    <Image src={RotateWoman} alt="thumbnail3" className='img-thumbnail' height={130} width={130}
                       style={{borderRadius:'50%', zIndex:10}} objectFit='cover' />
                   </div>
                   <div style={{position:'absolute', left:'-10%', bottom:'45%'}}>
-                    <Image src={Tunde} alt="thumbnail" className='img-thumbnail' height={70} width={70}
+                    <Image src={Tunde} alt="thumbnail4" className='img-thumbnail' height={70} width={70}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
                   <div style={{position:'absolute', left:'10%', bottom:0}}>
-                    <Image src={RotateWoman3} alt="thumbnail" className='img-thumbnail' height={70} width={70}
+                    <Image src={RotateWoman3} alt="thumbnail5" className='img-thumbnail' height={70} width={70}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
                 </div>
