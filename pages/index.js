@@ -25,6 +25,7 @@ import SecondAnimation from '../src/components/SecondAnimation'
 import Head from 'next/head'
 import ThirdAnimation from '../src/components/ThirdAnimation'
 
+
 export default function Home() {
   const {isFormVisible, email, setEmail} = useContext(FormContext); 
 
