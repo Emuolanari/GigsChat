@@ -6,6 +6,10 @@ import GroupGirl from './../src/assets/GroupGirl.svg'
 import NigerGirl from './../src/assets/NigerGirl.png'
 import HeadphoneGirl from './../src/assets/headphoneGirl.svg'
 import ThumbNailGirl from './../src/assets/thumbnailgirl.png'
+import RotateWoman from './../src/assets/unrotate.svg'
+import RotateWoman2 from './../src/assets/unrotate2.svg'
+import RotateWoman3 from './../src/assets/unrotate3.svg'
+import RotateWoman4 from './../src/assets/unrotate4.svg'
 import WomanOnMobile from './../src/assets/womanonmobile.png'
 import GIcon from './../src/assets/Gigschaticon.svg'
 import { useContext, useEffect, useState } from 'react'
@@ -178,8 +182,28 @@ export default function Home() {
             {/* <video src={"/gigsCvid.mp4"} autoPlay muted style={{ width: "80%", height:"100%", outline:'none' }} loop/> */}
             <div className="position-relative d-flex justify-content-center align-items-center circlesSize">
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%',zIndex:30}}>
-              {/* <Image src={Tunde} alt="thumbnail" className='img-thumbnail' */}
-                {/* height={70} width={70} style={{borderRadius:'50%'}} objectFit='cover'/> */}
+                <div className="postion-realtive" style={{height:'100%', width:'100%'}}>
+                  <div style={{position:'absolute', right:'-10%', bottom:'45%'}}>
+                    <Image src={RotateWoman2} alt="thumbnail" className='img-thumbnail' height={70} width={70}
+                      style={{borderRadius:'50%',border:'2px solid white', zIndex:190}} objectFit='cover' />
+                  </div>
+                  <div style={{position:'absolute', left:'65%', bottom:'-10%'}}>
+                    <Image src={RotateWoman} alt="thumbnail" className='img-thumbnail' height={130} width={130}
+                      style={{borderRadius:'50%', zIndex:190}} objectFit='cover' />
+                  </div>
+                  <div style={{position:'absolute', left:'-10%', bottom:'45%'}}>
+                    <Image src={Tunde} alt="thumbnail" className='img-thumbnail' height={70} width={70}
+                      style={{borderRadius:'50%',border:'2px solid white', zIndex:190}} objectFit='cover' />
+                  </div>
+                  <div style={{position:'absolute', left:'10%', bottom:'6%'}}>
+                    <Image src={RotateWoman3} alt="thumbnail" className='img-thumbnail' height={70} width={70}
+                      style={{borderRadius:'50%',border:'2px solid white', zIndex:190}} objectFit='cover' />
+                  </div>
+                  <div style={{position:'absolute', left:'15%', top:'-13%'}}>
+                    <Image src={RotateWoman4} alt="thumbnail" className='img-thumbnail' height={130} width={130}
+                      style={{borderRadius:'50%',border:'2px solid white', zIndex:190}} objectFit='cover' />
+                  </div>
+                </div>
               </div>
               <div className='rounded-circle position-absolute' style={{ zIndex:1,backgroundColor:'#E1F7F5', height:'60%', width:'60%'}}/>
               <div className='rounded-circle position-absolute' style={{ zIndex:2,backgroundColor:'#fff', height:'40%', width:'40%'}}/>
