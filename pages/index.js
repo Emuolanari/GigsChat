@@ -183,6 +183,10 @@ export default function Home() {
             <div className="position-relative d-flex justify-content-center align-items-center circlesSize">
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%',zIndex:30}}>
                 <div className="postion-realtive" style={{height:'100%', width:'100%'}}>
+                <div style={{position:'absolute', left:'15%', top:'-13%'}}>
+                    <Image src={RotateWoman4} alt="thumbnail" className='img-thumbnail' height={130} width={130}
+                      style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
+                  </div>
                   <div style={{position:'absolute', right:'-10%', bottom:'53%'}}>
                     <Image src={RotateWoman2} alt="thumbnail" className='img-thumbnail' height={70} width={70}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
@@ -195,12 +199,8 @@ export default function Home() {
                     <Image src={Tunde} alt="thumbnail" className='img-thumbnail' height={70} width={70}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
-                  <div style={{position:'absolute', left:'10%', bottom:'6%'}}>
+                  <div style={{position:'absolute', left:'10%', bottom:0}}>
                     <Image src={RotateWoman3} alt="thumbnail" className='img-thumbnail' height={70} width={70}
-                      style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
-                  </div>
-                  <div style={{position:'absolute', left:'15%', top:'-13%'}}>
-                    <Image src={RotateWoman4} alt="thumbnail" className='img-thumbnail' height={130} width={130}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
                 </div>
