@@ -180,24 +180,24 @@ export default function Home() {
             <div className="position-relative d-flex justify-content-center align-items-center circlesSize">
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%',zIndex:30}}>
                 <div className="postion-realtive" style={{height:'100%', width:'100%'}}>
-                <div style={{position:'absolute', left:'15%', top:'-13%'}}>
-                    <Image src={RotateWoman4} alt="thumbnail1" className='img-thumbnail' height={130} width={130}
+                <div style={{position:'absolute', left:'20%', top:'-8%'}}>
+                    <Image src={RotateWoman4} alt="thumbnail1" className='img-thumbnail' height={100} width={100}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
-                  <div style={{position:'absolute', right:'-10%', bottom:'53%'}}>
-                    <Image src={RotateWoman2} alt="thumbnail2" className='img-thumbnail' height={70} width={70}
+                  <div style={{position:'absolute', right:'-5%', bottom:'53%'}}>
+                    <Image src={RotateWoman2} alt="thumbnail2" className='img-thumbnail' height={50} width={50}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
-                  <div style={{position:'absolute', left:'65%', bottom:'-10%'}}>
-                    <Image src={RotateWoman} alt="thumbnail3" className='img-thumbnail' height={130} width={130}
+                  <div style={{position:'absolute', left:'65%', bottom:'-5%'}}>
+                    <Image src={RotateWoman} alt="thumbnail3" className='img-thumbnail' height={100} width={100}
                       style={{borderRadius:'50%', zIndex:10}} objectFit='cover' />
                   </div>
-                  <div style={{position:'absolute', left:'-10%', bottom:'45%'}}>
-                    <Image src={Tunde} alt="thumbnail4" className='img-thumbnail' height={70} width={70}
+                  <div style={{position:'absolute', left:'-5%', bottom:'45%'}}>
+                    <Image src={Tunde} alt="thumbnail4" className='img-thumbnail' height={50} width={50}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
-                  <div style={{position:'absolute', left:'10%', bottom:0}}>
-                    <Image src={RotateWoman3} alt="thumbnail5" className='img-thumbnail' height={70} width={70}
+                  <div style={{position:'absolute', left:'15%', bottom:'3%'}}>
+                    <Image src={RotateWoman3} alt="thumbnail5" className='img-thumbnail' height={50} width={50}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
                 </div>
