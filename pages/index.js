@@ -181,6 +181,7 @@ export default function Home() {
               <div className='rounded-circle position-absolute' style={{border:'2px solid #37D0C7', height:'80%', width:'80%',zIndex:30}}>
                 <div className="postion-realtive" style={{height:'100%', width:'100%'}}>
                 <div style={{position:'absolute', left:'20%', top:'-8%'}}>
+                  {/* Take off borders and put on containing div */}
                     <Image src={RotateWoman4} alt="thumbnail1" className='img-thumbnail' height={100} width={100}
                       style={{borderRadius:'50%',border:'2px solid white', zIndex:10}} objectFit='cover' />
                   </div>
