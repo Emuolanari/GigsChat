@@ -30,10 +30,10 @@ function SecondAnimation() {
   return (
     <div className="d-flex justify-content-center text-white">
         <div style={{maxWidth:'100%',maxHeight:'100%', height: 'auto', position:'relative'}}>
-            <div className="position-absolute hiddenMessage" style={{zIndex:2, left:-120, bottom:170}}>{transition((style, item)=>item?'':<animated.div style={style}>
+            {/* <div className="position-absolute hiddenMessage" style={{zIndex:2, left:-120, bottom:170}}>{transition((style, item)=>item?'':<animated.div style={style}>
                 <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}
                     color={'#FFAC0E'} maxW={250} padding={9} />
-            </animated.div>)}</div>
+            </animated.div>)}</div> */}
             <div className='position-absolute hiddenMessage' style={{zIndex:4,left:-120, bottom:170}}>
                 {timeToChange?
                 <Message name='Jenny Wilson' message='No more messages from unserious clients' imgSrc={CoolGirl}
