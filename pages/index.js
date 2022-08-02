@@ -206,7 +206,7 @@ export default function Home() {
               <div className='rounded-circle position-absolute' style={{ zIndex:1,backgroundColor:'#E1F7F5', height:'60%', width:'60%'}}/>
               <div className='rounded-circle position-absolute' style={{ zIndex:2,backgroundColor:'#fff', height:'40%', width:'40%'}}/>
               <ThirdAnimation/>
-              <div className='rounded-circle position-absolute' style={{ zIndex:4,backgroundColor:'#52DA81', height:'2%', width:'2%', bottom:'43%', right:'41%'}}/>
+              <div className='rounded-circle position-absolute' style={{ zIndex:4,backgroundColor:'#52DA81', height:'2%', width:'2%', border:'1px solid white', bottom:'43%', right:'41%'}}/>
               
               <Image src={GIcon} alt='gigschat icon' style={{zIndex:5}}/>
             </div>
